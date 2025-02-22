@@ -20,9 +20,10 @@
 </header>
 <main>
     <section class="members">
+        <!-- member 1 -->
         <article class="member1">
             <div class="member1_profile">
-                <img id="logo-photo" class="professional-photo" src="LOgo_72.png" alt="logo-professional">
+                <img class="logo-photo professional-photo" src="LOgo_72.png" alt="logo-professional">
                 <ul id="special" class="special_student_1">
                     <li><p class="special_student-p"><a style="color: mediumslateblue;">Специальность: </a>09.02.03 Программирование в компьютерных системах</p></li>
                 </ul>
@@ -40,14 +41,38 @@
                 <p class="first-place_paragraph">Радыгин Евгений</p>
             </div>            
         </article>
+        <!-- member 2 -->
+        <article id="member2" class="member1">
+            <div class="member1_profile">
+                <img class="logo-photo professional-photo" src="LOgo_72.png" alt="logo-professional">
+                <ul id="special" class="special_student_1">
+                    <li><p class="special_student-p"><a style="color: mediumslateblue;">Специальность: </a>09.02.03 Программирование в компьютерных системах</p></li>
+                </ul>
+                <ul id="diplom" class="special_student_2"> 
+                    <li><p class="special_student-p"><a style="color: mediumslateblue;">Диплом:</a></p></li>
+                </ul>
+                <ul id="competition" class="special_student_3"> 
+                    <li><p class="special_student-p"><a style="color: mediumslateblue;">Участие в конкурсах:</a></p></li>
+                </ul>
+                <img class="person_img" src="person.png" alt="member 1">
+                <section class="seperator-wrapper">
+                    <div class="seperator gradient">
+                    </div>
+                </section>
+                <p class="first-place_paragraph">Лапихин Алексей</p>
+            </div>            
+        </article>
     </section>
 </main>
 <footer>
         
 </footer>
 <script>
-    document.getElementById("logo-photo").onclick = function() {
-        window.location.href = 'https://pro.firpo.ru/';
-    }  
+    const logotips = document.getElementsByClassName('logo-photo');
+    for (let i = 0; i < logotips.length; i++) {
+        logotips[i].onclick = function() {
+            window.location.href = 'https://pro.firpo.ru/';
+        }
+    }
 </script>
 </body>
