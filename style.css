@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: default;
+}
+.name{
+    padding-top: 10px;
+}
+.name p{
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 37px;
+    letter-spacing: 0.05em;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: rgba(24, 28, 41, 1);
+    text-decoration: none;
+    text-align: center;
+}
+.members{
+    padding-top: 35px;
+    width: 100%;
+    height: 500px;
+    display: flex;
+}
+.member1{
+    transition: transform 0.3s ease;
+    cursor: help; /* pointer */
+    width: 1100px;
+    height: 300px;
+    background: #f6f6f6;
+    border-radius: 30px;
+    margin-left: 20px;
+}
+.member1:hover{
+    transform: scale(1.04);
+}
+.member1_profile{
+    width: 250px;
+    height: 300px;
+    background: #e0e0e0;
+    border-radius: 10%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.person_img{
+    width: 280px;
+    height: 280px;
+    margin-left: -15px;
+}
+@import "compass/css3";
+.seperator-wrapper {
+    width: 300px;
+    margin-top: -41px;
+    .seperator {
+    width: 250px;
+    height: 3.5px;
+    animation: rotate 2s infinite linear;
+    -webkit-animation: rotate 2s infinite linear;
+    }
+}
+@-webkit-keyframes rotate {
+    from {
+        background-position: -300px;
+    }
+    to { 
+        background-position: 0px;
+    }
+}
+@keyframes rotate {
+    from {
+        background-position: -300px;
+    }
+    to { 
+        background-position: -50px;
+    }
+}
+.gradient {
+    background: rgb(30,30,30); /* Old browsers */
+    background: -moz-linear-gradient(left, rgba(30,30,30,1) 0%, rgba(50,50,50,1) 25%, rgba(100,100,100,1) 50%, rgba(150,150,150,1) 75%, rgba(30,30,30,1) 100%); /* FF3.6+ */
+    background: -webkit-linear-gradient(left, rgba(30,30,30,1) 0%,rgba(50,50,50,1) 25%,rgba(100,100,100,1) 50%,rgba(150,150,150,1) 75%,rgba(30,30,30,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left, rgba(30,30,30,1) 0%,rgba(50,50,50,1) 25%,rgba(100,100,100,1) 50%,rgba(150,150,150,1) 75%,rgba(30,30,30,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left, rgba(30,30,30,1) 0%,rgba(50,50,50,1) 25%,rgba(100,100,100,1) 50%,rgba(150,150,150,1) 75%,rgba(30,30,30,1) 100%); /* IE10+ */
+    background: linear-gradient(to right, rgba(30,30,30,1) 0%,rgba(50,50,50,1) 25%,rgba(100,100,100,1) 50%,rgba(150,150,150,1) 75%,rgba(30,30,30,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e1e1e', endColorstr='#1e1e1e',GradientType=1 ); /* IE6-9 */
+}
+.first-place_paragraph{
+    font-family: Montserrat;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: rgba(24, 28, 41, 1);
+    text-decoration: none;
+    text-align: center;
+    padding-top: 5%;
+}
+.special_student_1{
+    display: flex;
+    flex-direction: column;
+    padding-left: 300px;
+    padding-top: 10px;
+    position: absolute;
+    width: 800px;
+    gap: 10px;
+}
+.special_student-p{
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: rgba(24, 28, 41, 1);
+}
+
+.special_student_2{
+    display: flex;
+    flex-direction: column;
+    padding-left: 300px;
+    padding-top: 10px;
+    position: absolute;
+    width: 800px;
+    gap: 10px;
+}
+@counter-style student-alpha_special_1 {
+    system: fixed;
+    symbols: 📚;
+    suffix: " ";
+}
+.special_student_1 li {
+    list-style: student-alpha_special_1;
+    content: "📚";
+    font-size: 24px;
+}
+#diplom{
+    padding-top: 45px;
+}
+@counter-style student-alpha_special_2 {
+    system: fixed;
+    symbols: 👨‍🎓️;
+    suffix: " ";
+}
+.special_student_2 li {
+    list-style: student-alpha_special_2;
+    content: "👨‍🎓️";
+    font-size: 24px;
+}
+
+.professional-photo{
+    position: absolute;
+    width: 200px; 
+    opacity: 0.3;
+    margin-left: 900px;
+    margin-top: 105px;
+    transition: opacity 0.3s ease-out;
+}
+.professional-photo:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+#competition{
+    padding-top: 80px;
+}
+.special_student_3{
+    display: flex;
+    flex-direction: column;
+    padding-left: 300px;
+    padding-top: 10px;
+    position: absolute;
+    width: 800px;
+    gap: 10px;
+}
+@counter-style student-alpha_compet {
+    system: fixed;
+    symbols: 🎯;
+    suffix: " ";
+}
+.special_student_3 li {
+    list-style: student-alpha_compet;
+    content: "🎯";
+    font-size: 24px;
+}

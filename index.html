@@ -13,15 +13,41 @@
     <link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&family=Allura&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
-        <div class="name">
-            <p class="name p">Участники конкурсов профессионального мастерства в колледже</p>
-        </div>
-    </header>
+<header class="header">
+    <div class="name">
+        <p class="name p">Участники конкурсов профессионального мастерства в колледже</p>
+    </div>
+</header>
 <main>
-
+    <section class="members">
+        <article class="member1">
+            <div class="member1_profile">
+                <img id="logo-photo" class="professional-photo" src="LOgo_72.png" alt="logo-professional">
+                <ul id="special" class="special_student_1">
+                    <li><p class="special_student-p"><a style="color: mediumslateblue;">Специальность: </a>09.02.03 Программирование в компьютерных системах</p></li>
+                </ul>
+                <ul id="diplom" class="special_student_2"> 
+                    <li><p class="special_student-p"><a style="color: mediumslateblue;">Диплом:</a></p></li>
+                </ul>
+                <ul id="competition" class="special_student_3"> 
+                    <li><p class="special_student-p"><a style="color: mediumslateblue;">Участие в конкурсах:</a></p></li>
+                </ul>
+                <img class="person_img" src="person.png" alt="member 1">
+                <section class="seperator-wrapper">
+                    <div class="seperator gradient">
+                    </div>
+                </section>
+                <p class="first-place_paragraph">Радыгин Евгений</p>
+            </div>            
+        </article>
+    </section>
 </main>
 <footer>
         
 </footer>
+<script>
+    document.getElementById("logo-photo").onclick = function() {
+        window.location.href = 'https://pro.firpo.ru/';
+    }  
+</script>
 </body>
