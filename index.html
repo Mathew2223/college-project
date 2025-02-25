@@ -7,7 +7,6 @@
     <title>Programming competition</title>
 
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="modern.js">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,16 +14,27 @@
 </head>
 <body>
 <header class="header">
+    <!-- <img class="logo-photo professional-photo" src="LOgo_72.png" alt="logo-professional"> -->
     <div class="name">
-        <p class="name p">Участники конкурсов профессионального мастерства в колледже</p>
+        <p class="name p">Участники конкурсов профессионального мастерства в Слободском колледже</p>
     </div>
 </header>
 <main>
-    <section class="members">
+    <nav class="nav">
+        <div class="members-switch-block">
+            <p class="members-switch-text">Участники</p>
+            <div class="members-switch" id="members-circle">
+              <div class="members-switch-circle-left" id="circle-left"></div>
+              <div class="members-switch-circle-right" id="circle-right"></div>
+            </div>
+            <p class="members-switch-text">Результаты конкурсов</p>
+          </div>
+        </div>
+    </nav>
+    <section class="members" id="members">
         <!-- member 1 -->
         <article class="member1">
             <div class="member1_profile">
-                <img class="logo-photo professional-photo" src="LOgo_72.png" alt="logo-professional">
                 <ul id="special" class="special_student_1">
                     <li><p class="special_student-p"><a style="color: mediumslateblue;">Специальность: </a>09.02.03 Программирование в компьютерных системах</p></li>
                 </ul>
@@ -32,7 +42,11 @@
                     <li><p class="special_student-p"><a style="color: mediumslateblue;">Диплом:</a></p></li>
                 </ul>
                 <ul id="competition" class="special_student_3"> 
-                    <li><p class="special_student-p"><a style="color: mediumslateblue;">Участие в конкурсах:</a></p></li>
+                    <li><p class="special_student-p"><a style="color: mediumslateblue;">Участие в конкурсах:</a>
+                    <br>
+                    <a class="twenty-19-comptetition"><a style="color: #FFC000">1 место </a> — «Программные решения для бизнеса» (2019г)</a>
+                    <!-- or color: #FFC000 -->
+                    </p></li>
                 </ul>
                 <img class="person_img" src="person.png" alt="member 1">
                 <section class="seperator-wrapper">
@@ -45,7 +59,6 @@
         <!-- member 2 -->
         <article id="member2" class="member1">
             <div class="member1_profile">
-                <img class="logo-photo professional-photo" src="LOgo_72.png" alt="logo-professional">
                 <ul id="special" class="special_student_1">
                     <li><p class="special_student-p"><a style="color: mediumslateblue;">Специальность: </a>09.02.03 Программирование в компьютерных системах</p></li>
                 </ul>
@@ -53,7 +66,10 @@
                     <li><p class="special_student-p"><a style="color: mediumslateblue;">Диплом:</a></p></li>
                 </ul>
                 <ul id="competition" class="special_student_3"> 
-                    <li><p class="special_student-p"><a style="color: mediumslateblue;">Участие в конкурсах:</a></p></li>
+                    <li><p class="special_student-p"><a style="color: mediumslateblue;">Участие в конкурсах:</a>
+                        <br>
+                        <a class="twenty-19-comptetition"><a style="color: #696969	">2 место </a> — «Программные решения для бизнеса» (2019г)</a>
+                    </p></li>
                 </ul>
                 <img class="person_img" src="person.png" alt="member 1">
                 <section class="seperator-wrapper">
@@ -63,10 +79,38 @@
                 <p class="first-place_paragraph">Лапихин Алексей</p>
             </div>            
         </article>
+        <!-- member 3 -->
+        <article class="member1">
+            <div class="member1_profile">
+                <ul id="special" class="special_student_1">
+                    <li><p class="special_student-p"><a style="color: mediumslateblue;">Специальность: </a>09.02.03 Программирование в компьютерных системах</p></li>
+                </ul>
+                <ul id="diplom" class="special_student_2"> 
+                    <li><p class="special_student-p"><a style="color: mediumslateblue;">Диплом:</a></p></li>
+                </ul>
+                <ul id="competition" class="special_student_3"> 
+                    <li><p class="special_student-p"><a style="color: mediumslateblue;">Участие в конкурсах:</a>
+                    <br><a class="twenty-19-comptetition"><a style="color: #CD7F32	">3 место </a> — «Программные решения для бизнеса» (2019г)</a>
+                    </p></li>
+                </ul>
+                <img class="person_img" src="person.png" alt="member 1">
+                <section class="seperator-wrapper">
+                    <div class="seperator gradient">
+                    </div>
+                </section>
+                <p class="first-place_paragraph">Чеглаков Алексей</p>
+            </div>            
+        </article>
+    </section>
+    <section style="display: none;" class="results" id="results">
+        <div class="winners">
+            <p class="hyper-nineteen">2019</p>
+        </div>
     </section>
 </main>
 <footer>
         
 </footer>
+<script src="script.js" defer></script>
 <script src="modern.js" defer></script>
 </body>

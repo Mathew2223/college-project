@@ -2,22 +2,30 @@
     margin: 0;
     padding: 0;
 }
+html {
+    scroll-behavior: smooth;
+}
 .header{
+    background: #9ee378;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
     width: 100%;
-    height: 100px;
+    height: 130px;
     display: flex;
-    justify-content: center;
     align-items: center;
     cursor: default;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    justify-content: center;
 }
-.name{
-    padding-top: 10px;
+main{
+    background: #9ed891;
 }
 .name p{
     font-family: Montserrat;
-    font-size: 30px;
+    font-size: 38px;
     font-weight: 600;
-    line-height: 37px;
+    line-height: 40px;
     letter-spacing: 0.05em;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
@@ -25,21 +33,32 @@
     text-decoration: none;
     text-align: center;
 }
+.professional-photo{
+    width: 120px; 
+    opacity: 0.5;
+    margin-top: 5px;
+    transition: opacity 0.3s ease-out;
+}
+.professional-photo:hover{
+    opacity: 1;
+    cursor: pointer;
+}
 .members{
-    padding-top: 35px;
     width: 100%;
-    height: 500px;
     display: flex;
     flex-wrap: wrap;
+    gap: 80px;
+    justify-content: center;
 }
 .member1{
     transition: transform 0.3s ease;
-    cursor: help; /* pointer */
+    cursor: pointer;
     width: 1100px;
     height: 300px;
     background: #f6f6f6;
     border-radius: 30px;
     margin-left: 20px;
+    margin-right: 20px;
 }
 .member1:hover{
     transform: scale(1.04);
@@ -120,7 +139,7 @@
     font-family: Montserrat;
     font-size: 18px;
     font-weight: 600;
-    line-height: 24px;
+    line-height: 29px;
     letter-spacing: 0.05em;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
@@ -160,19 +179,6 @@
     font-size: 24px;
 }
 
-.professional-photo{
-    position: absolute;
-    width: 200px; 
-    opacity: 0.3;
-    margin-left: 900px;
-    margin-top: 105px;
-    transition: opacity 0.3s ease-out;
-}
-.professional-photo:hover{
-    opacity: 1;
-    cursor: pointer;
-}
-
 #competition{
     padding-top: 80px;
 }
@@ -196,7 +202,90 @@
     font-size: 24px;
 }
 
-#member2{
-    margin-left: 1120px;
-    margin-top: 50px;
+.twenty-19-comptetition{
+    color: #1B263B;
+}
+
+.nav{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.members-switch-text{    
+    font-family: Montserrat;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: 0.05em;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: rgba(24, 28, 41, 1);
+    text-decoration: none;
+}
+.members-switch-block{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.members-switch {
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 25px;
+    background-color: #3840CC;
+    border-radius: 22px;
+    cursor: pointer;
+}
+.members-switch-circle-left{
+    position: absolute;
+    top: 2.5px;
+    left: 2.5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    transition: ease-in-out 0.5s;
+}
+.members-switch-circle-right {
+    display: none;
+    position: absolute;
+    top: 2.5px;
+    right: 2.5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    transition: ease-in-out 0.5s;
+}
+
+
+.results{
+    display: flex;
+    justify-content: center;
+}
+.hyper-nineteen{
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 650;
+    line-height: 40px;
+    letter-spacing: 0.05em;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #3830CC;
+    text-decoration: none;
+    text-align: center;
+}
+.winners{
+    height: 500px;
+}
+
+
+
+
+
+
+
+@media (max-width: 1440px){
+    
 }
