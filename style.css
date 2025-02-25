@@ -299,6 +299,9 @@ main{
     background: #3820CC;
     transition: 0.4s ease-in-out;
 }
+.years-twentys.active {
+    background: #3840CC;
+}
 .p-years{
     font-family: Montserrat;
     font-size: 20px;

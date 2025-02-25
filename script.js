@@ -44,10 +44,18 @@ const third_art = document.getElementById('third-art');
 
 // 2019 year
 document.getElementById('nineteen-year').addEventListener('click', function() {
+    document.getElementById('nineteen-year').classList.remove('active');
+    document.getElementById('first-year').classList.remove('active');
+    document.getElementById('second-year').classList.remove('active');
+    document.getElementById('third-year').classList.remove('active');
+
+    this.classList.add('active');
+
     if (nineteen_art.style.display === 'flex') {
         nineteen_art.style.display = 'flex';
     }
     else {
+
         nineteen_art.style.display = 'flex';
         twenty_art.style.display = 'none';
         first_art.style.display = 'none';
@@ -57,6 +65,13 @@ document.getElementById('nineteen-year').addEventListener('click', function() {
 });
 // 2020 year
 document.getElementById('twenty-year').addEventListener('click', function() {
+    document.getElementById('nineteen-year').classList.remove('active');
+    document.getElementById('first-year').classList.remove('active');
+    document.getElementById('second-year').classList.remove('active');
+    document.getElementById('third-year').classList.remove('active');
+
+    this.classList.add('active');
+
     if (twenty_art.style.display === 'flex') {
         twenty_art.style.display = 'flex';
     }
@@ -70,6 +85,13 @@ document.getElementById('twenty-year').addEventListener('click', function() {
 });
 // 2021 year
 document.getElementById('first-year').addEventListener('click', function() {
+    document.getElementById('nineteen-year').classList.remove('active');
+    document.getElementById('first-year').classList.remove('active');
+    document.getElementById('second-year').classList.remove('active');
+    document.getElementById('third-year').classList.remove('active');
+
+    this.classList.add('active');
+
     if (first_art.style.display === 'flex') {
         first_art.style.display = 'flex';
     }
@@ -83,6 +105,13 @@ document.getElementById('first-year').addEventListener('click', function() {
 });
 // 2022 year
 document.getElementById('second-year').addEventListener('click', function() {
+    document.getElementById('nineteen-year').classList.remove('active');
+    document.getElementById('first-year').classList.remove('active');
+    document.getElementById('second-year').classList.remove('active');
+    document.getElementById('third-year').classList.remove('active');
+
+    this.classList.add('active');
+
     if (second_art.style.display === 'flex') {
         second_art.style.display = 'flex';
     }
@@ -96,6 +125,13 @@ document.getElementById('second-year').addEventListener('click', function() {
 });
 // 2023 year
 document.getElementById('third-year').addEventListener('click', function() {
+    document.getElementById('nineteen-year').classList.remove('active');
+    document.getElementById('first-year').classList.remove('active');
+    document.getElementById('second-year').classList.remove('active');
+    document.getElementById('third-year').classList.remove('active');
+
+    this.classList.add('active');
+
     if (third_art.style.display === 'flex') {
         third_art.style.display = 'flex';
     }
