@@ -4,6 +4,12 @@ const circleLeft = document.getElementById('circle-left');
 const circleRight = document.getElementById('circle-right');
 
 membersSwitch.addEventListener('click', () => {
+    document.getElementById('nineteen-year').classList.remove('active');
+    document.getElementById('twenty-year').classList.remove('active');
+    document.getElementById('first-year').classList.remove('active');
+    document.getElementById('second-year').classList.remove('active');
+    document.getElementById('third-year').classList.remove('active');
+
     document.getElementById('nineteen-art').style.display = 'none';
     document.getElementById('twenty-art').style.display = 'none';
     document.getElementById('first-art').style.display = 'none';
@@ -45,6 +51,7 @@ const third_art = document.getElementById('third-art');
 // 2019 year
 document.getElementById('nineteen-year').addEventListener('click', function() {
     document.getElementById('nineteen-year').classList.remove('active');
+    document.getElementById('twenty-year').classList.remove('active');
     document.getElementById('first-year').classList.remove('active');
     document.getElementById('second-year').classList.remove('active');
     document.getElementById('third-year').classList.remove('active');
@@ -66,6 +73,7 @@ document.getElementById('nineteen-year').addEventListener('click', function() {
 // 2020 year
 document.getElementById('twenty-year').addEventListener('click', function() {
     document.getElementById('nineteen-year').classList.remove('active');
+    document.getElementById('twenty-year').classList.remove('active');
     document.getElementById('first-year').classList.remove('active');
     document.getElementById('second-year').classList.remove('active');
     document.getElementById('third-year').classList.remove('active');
@@ -86,6 +94,7 @@ document.getElementById('twenty-year').addEventListener('click', function() {
 // 2021 year
 document.getElementById('first-year').addEventListener('click', function() {
     document.getElementById('nineteen-year').classList.remove('active');
+    document.getElementById('twenty-year').classList.remove('active');
     document.getElementById('first-year').classList.remove('active');
     document.getElementById('second-year').classList.remove('active');
     document.getElementById('third-year').classList.remove('active');
@@ -106,6 +115,7 @@ document.getElementById('first-year').addEventListener('click', function() {
 // 2022 year
 document.getElementById('second-year').addEventListener('click', function() {
     document.getElementById('nineteen-year').classList.remove('active');
+    document.getElementById('twenty-year').classList.remove('active');
     document.getElementById('first-year').classList.remove('active');
     document.getElementById('second-year').classList.remove('active');
     document.getElementById('third-year').classList.remove('active');
@@ -126,6 +136,7 @@ document.getElementById('second-year').addEventListener('click', function() {
 // 2023 year
 document.getElementById('third-year').addEventListener('click', function() {
     document.getElementById('nineteen-year').classList.remove('active');
+    document.getElementById('twenty-year').classList.remove('active');
     document.getElementById('first-year').classList.remove('active');
     document.getElementById('second-year').classList.remove('active');
     document.getElementById('third-year').classList.remove('active');
