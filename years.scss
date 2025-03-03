@@ -1,0 +1,125 @@
+$flexbox__display-flex: flex; 
+$cursor-pointer: pointer;
+$font-Montserrat: Montserrat;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+img{
+    width: 150px;
+    height: 150px;
+    margin-left: -15px;
+}
+.years-results{
+    display: none;
+}
+.years-hyper_paragraph{
+    font-family: $font-Montserrat;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 29px;
+    letter-spacing: 0.05em;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #f6f6f6;
+    text-align: center;
+}
+section{
+    display: $flexbox__display-flex;
+    justify-content: center;
+}
+.block-winners{
+    width: var(--width-screen);
+}
+.buisness_blocks{
+    display: $flexbox__display-flex;
+    height: 550px;
+    gap: 50px;
+    margin: 50px 20px 0px 10px;
+    flex-direction: row;
+    list-style-type: none;
+}
+.buisness_block{
+    flex-direction: row;
+    width: calc((100% - 60px) / 3);
+    background: #4539bd;
+    border-radius: 25px;
+    gap: 30px;
+    padding: 40px;
+    display: $flexbox__display-flex;
+    height: 230px;
+    border-radius: 30px;
+    cursor: $cursor-pointer;
+    transition: transform 0.3s ease; 
+}
+.buisness_block:hover{
+    transform: scale(1.03);
+}
+.about_member-resulting{
+    display: $flexbox__display-flex;
+    flex-direction: column;
+}
+.name_of_members-competition{
+    font-family: $font-Montserrat;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0.1em;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #fff;
+    text-decoration: none;
+}
+:root {
+    --width-screen: calc(106vw - 150px);
+}
+@media (max-width: 2172px) {
+    :root{
+        --width-screen: calc(107vw - 150px);
+    }
+}
+@media (max-width: 1944px) {
+    :root{
+        --width-screen: calc(108vw - 150px);
+    }
+}
+@media (max-width: 1688px) {
+    :root{
+        --width-screen: calc(109vw - 150px);
+    }
+}
+@media (max-width: 770px) {
+    .buisness_blocks{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .buisness_block{
+        width: 80%;
+    }
+    .block-winners {
+        justify-content: center;
+    }
+}
+@media (max-width: 1468px) {
+    img{
+        width: 165px;
+        height: 165px;
+    }
+    .buisness_block{
+        height: 450px;
+        flex-direction: column;
+        display: $flexbox__display-flex;
+        align-items: center;
+    }
+    .name_of_members-competition{
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 35px;
+        text-align: center;
+    }
+    :root {
+        --width-screen: calc(110vw - 150px);
+    }
+}
