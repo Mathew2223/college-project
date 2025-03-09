@@ -1,6 +1,9 @@
 $flexbox__display-flex: flex; 
 $cursor-pointer: pointer;
 $font-Montserrat: Montserrat;
+@mixin wrap() {
+    flex-wrap: wrap;
+}
 @import "style.css";
 @import "style.scss";
 @import 'sass/constants/constants.scss';
@@ -52,7 +55,7 @@ img{
     gap: 50px;
     margin: 50px 20px 0px 10px;
     flex-direction: row;
-    flex-wrap: wrap;
+    @include wrap();
     list-style-type: none;
     width: 100%;
     justify-content: center;
@@ -175,7 +178,7 @@ img{
         font-size: 26px;
     }
     .buisness_blocks{
-        flex-wrap: wrap;
+        @include wrap();
         justify-content: center;
         display: flex;
         flex-direction: row;
