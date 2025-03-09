@@ -1,6 +1,13 @@
 $flexbox__display-flex: flex; 
 $cursor-pointer: pointer;
 $font-Montserrat: Montserrat;
+@import "style.css";
+@import "style.scss";
+@import 'sass/constants/constants.scss';
+
+// :root{
+//     --width-screen: calc(100vw - 200px);
+// }
 *{
     margin: 0;
     padding: 0;
@@ -12,8 +19,12 @@ img{
     height: 150px;
     margin-left: -15px;
 }
+.nineteen-year__section{
+    margin: 0 auto;
+}
 .years-results{
     display: none;
+    justify-content: center;
 }
 .years-hyper_paragraph{
     font-family: $font-Montserrat;
@@ -26,24 +37,30 @@ img{
     color: #f6f6f6;
     text-align: center;
 }
-section{
-    display: $flexbox__display-flex;
-    justify-content: center;
+.block-winners__div{
+    box-sizing: border-box;
 }
 .block-winners{
-    width: var(--width-screen);
+    display: $flexbox__display-flex;
+    justify-content: center;
+
 }
 .buisness_blocks{
+    align-items: stretch;
     display: $flexbox__display-flex;
-    height: 550px;
+    height: 500px;
     gap: 50px;
     margin: 50px 20px 0px 10px;
     flex-direction: row;
+    flex-wrap: wrap;
     list-style-type: none;
+    width: 100%;
+    justify-content: center;
 }
 .buisness_block{
+    flex: calc((100% - 60px) / 4);
+    width: 700px;
     flex-direction: row;
-    width: calc((100% - 60px) / 3);
     background: #4539bd;
     border-radius: 25px;
     gap: 30px;
@@ -53,9 +70,9 @@ section{
     border-radius: 30px;
     cursor: $cursor-pointer;
     transition: transform 0.3s ease; 
-}
-.buisness_block:hover{
-    transform: scale(1.03);
+    &:hover{
+        transform: scale(1.03);
+    }
 }
 .about_member-resulting{
     display: $flexbox__display-flex;
@@ -65,61 +82,113 @@ section{
     font-family: $font-Montserrat;
     font-size: 26px;
     font-weight: 600;
-    line-height: 30px;
+    line-height: 32px;
     letter-spacing: 0.1em;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
     color: #fff;
     text-decoration: none;
 }
-:root {
-    --width-screen: calc(106vw - 150px);
+.name_of_place-competition{
+    margin-top: 10px;
+    font-family: $font-Montserrat;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 0.1em;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #fff;
+    text-decoration: none;
 }
-@media (max-width: 2172px) {
-    :root{
-        --width-screen: calc(107vw - 150px);
+@media (max-width: 1468px) {
+    img{
+        width: 150px;
+        height: 150px;
+    }
+    .buisness_block{
+        display: $flexbox__display-flex;
+        padding-top: 25px;
+        gap: 10px;
+        flex-direction: column;
+        height: 320px;
+        flex: calc((100% - 60px) / 4);
+        align-items: center;
+    }
+    .name_of_members-competition{
+        font-size: 24px;
+        font-weight: 600;
+        text-align: center;
+        line-height: 26px;
+    }
+    .name_of_place-competition{
+        text-align: center;
+        margin-top: 15px;
+        line-height: 24px;
     }
 }
-@media (max-width: 1944px) {
-    :root{
-        --width-screen: calc(108vw - 150px);
+@media (max-width: 1052px) {
+    img{
+        width: 130px;
+        height: 130px;
     }
-}
-@media (max-width: 1688px) {
-    :root{
-        --width-screen: calc(109vw - 150px);
+    .name_of_members-competition{
+        font-size: 22px;
+    }
+    .name_of_place-competition{
+        font-size: 18px;
     }
 }
 @media (max-width: 770px) {
+    .name h1 {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .members-switch-circle-left{
+        top: 2px;
+        left: 2px;
+        width: 16px;
+        height: 16px;
+    }
+    .members-switch-circle-right{
+        top: 2px;
+        right: 2px;
+        width: 16px;
+        height: 16px;
+    }
+    .members-switch{
+        width: 40px;
+        height: 20px;
+    }
+    .members-switch-block{
+        justify-content: center;
+    }
+    .members-switch-text{
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .winners-years{
+        height: 150px;
+        justify-content: center;
+    }
+    .years-hyper_paragraph{
+        font-size: 26px;
+    }
     .buisness_blocks{
         flex-wrap: wrap;
         justify-content: center;
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
     }
-    .buisness_block{
-        width: 80%;
+    .buisness-block{
+        width: 50px;
+        height: 50px;
     }
     .block-winners {
         justify-content: center;
     }
-}
-@media (max-width: 1468px) {
-    img{
-        width: 165px;
-        height: 165px;
-    }
-    .buisness_block{
-        height: 450px;
-        flex-direction: column;
-        display: $flexbox__display-flex;
-        align-items: center;
-    }
     .name_of_members-competition{
-        font-size: 28px;
-        font-weight: 600;
-        line-height: 35px;
-        text-align: center;
-    }
-    :root {
-        --width-screen: calc(110vw - 150px);
+        font-size: 20px;
     }
 }

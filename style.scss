@@ -1,12 +1,18 @@
 @import "style.css";
-$white-color: white;
-$almost-black-color-p: rgba(24, 28, 41, 1);
-$almost-white-color: rgba(256, 256, 256, 0.9);
+@import 'sass/constants/constants.scss';
 
-$flexbox__display-flex: flex; 
-$cursor-pointer: pointer;
-$font-Montserrat: Montserrat;
-*{
+@mixin flex($display: flex) {
+    display: $display;
+    align-items: center;
+    justify-content: center;
+}
+@mixin text-custum(){
+    text-decoration-skip-ink: none;
+    text-decoration: none;
+    text-align: center;
+    text-underline-position: from-font;
+}
+* {
     margin: 0;
     padding: 0;
 }
@@ -19,41 +25,33 @@ html {
     box-shadow: 0px 3px 3px rgba(256, 256, 256, 0.5);
     width: 100%;
     height: 130px;
-    display: $flexbox__display-flex;
-    align-items: center;
     cursor: default;
     position: sticky;
     top: 0;
     z-index: 1;
-    justify-content: center;
+    @include flex();
 }
 main{
     /* background-color: #39d486; */
     background-image: url('background-black.jpg');
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 100% 100%;
 }
-.name p{
+.name h1{
     font-family: $font-Montserrat;
     font-size: 35px;
     font-weight: 600;
     line-height: 40px;
-    letter-spacing: 0.05em;
+    letter-spacing: $letter-spacing_text;
     text-underline-position: from-font;
     color: $white-color;
-    text-decoration-skip-ink: none;
-    text-decoration: none;
-    text-align: center;
+    @include text-custum();
 }
 .professional-photo{
     width: 120px; 
     opacity: 0.5;
     margin-top: 5px;
     transition: opacity 0.3s ease-out;
-}
-.professional-photo:hover{
-    opacity: 1;
-    cursor: $cursor-pointer;
 }
 .members{
     width: 1000px;
@@ -73,9 +71,9 @@ main{
     margin-right: 20px;
     cursor: $cursor-pointer;
     transition: transform 0.3s ease;
-}
-.member1:hover{
-    transform: scale(1.04);
+    &:hover{
+        transform: scale(1.04);
+    }
 }
 .member1_profile{
     width: 250px;
@@ -90,10 +88,11 @@ main{
     width: 280px;
     height: 280px;
 }
+
+// buttom photo line
 .seperator-wrapper {
     width: 300px;
     margin-top: -41px;
-    margin-left: -25px;
     .seperator {
     width: 250px;
     height: 3.5px;
@@ -131,12 +130,10 @@ main{
     font-size: 22px;
     font-weight: 600;
     line-height: 24px;
-    letter-spacing: 0.05em;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
+    letter-spacing: $letter-spacing_text;
     color: $almost-black-color-p;
     text-decoration: none;
-    text-align: center;
+    @include text-custum();
     padding-top: 5%;
 }
 .special_student_1{
@@ -153,7 +150,7 @@ main{
     font-size: 18px;
     font-weight: 600;
     line-height: 29px;
-    letter-spacing: 0.05em;
+    letter-spacing: $letter-spacing_text;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
     color: $almost-black-color-p;
@@ -221,16 +218,14 @@ main{
 
 .nav-scroll{
     height: 100px;
-    display: $flexbox__display-flex;
-    justify-content: center;
-    align-items: center;
+    @include flex();
 }
 .members-switch-text{    
     font-family: $font-Montserrat;
     font-size: 22px;
     font-weight: 600;
     line-height: 40px;
-    letter-spacing: 0.05em;
+    letter-spacing: 0$letter-spacing_text;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
     color: $almost-white-color;
@@ -282,12 +277,10 @@ main{
     font-size: 50px;
     font-weight: 650;
     line-height: 40px;
-    letter-spacing: 0.05em;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
+    letter-spacing: $letter-spacing_text;
     color: rgba(24, 28, 41, 1);
     text-decoration: none;
-    text-align: center;
+    @include text-custum();
 }
 .winners-years{
     display: $flexbox__display-flex;
@@ -309,10 +302,10 @@ main{
     border: 2px solid rgba(256, 256, 256, .8);
     cursor: $cursor-pointer;
     transition: 0.4s ease-in-out;
-}
-.years-twentys:hover{
-    background: #674fff;
-    transition: 0.35s ease-in-out;
+    &:hover{
+        background: #674fff;
+        transition: 0.35s ease-in-out;
+    }
 }
 .years-twentys.active {
     background: #2250CC;
@@ -322,27 +315,19 @@ main{
     font-size: 20px;
     font-weight: 550;
     line-height: 40px;
-    letter-spacing: 0.05em;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
+    letter-spacing: $letter-spacing_text;
     color: $almost-white-color;
     text-decoration: none;
-    text-align: center;
+    @include text-custum();
 }
 
 
 
-
-/* @media (max-width: 505px){
-    .header{
-        height: 300px;
-    }
-} */
 @media (max-width: 770px){
     .header{
         height: 115px;
     }
-    .name p{
+    .name h1{
         font-size: 24px;
         line-height: 30px;
     }

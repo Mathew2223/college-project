@@ -69,6 +69,11 @@ document.getElementById('nineteen-year').addEventListener('click', function() {
         second_art.style.display = 'none';
         third_art.style.display = 'none';
     }
+    document.getElementById('nineteen-year').style.cursor = 'default';
+    document.getElementById('twenty-year').style.cursor = 'pointer';
+    document.getElementById('first-year').style.cursor = 'pointer';
+    document.getElementById('second-year').style.cursor = 'pointer';
+    document.getElementById('third-year').style.cursor = 'pointer';
 });
 // 2020 year
 document.getElementById('twenty-year').addEventListener('click', function() {
@@ -90,6 +95,11 @@ document.getElementById('twenty-year').addEventListener('click', function() {
         second_art.style.display = 'none';
         third_art.style.display = 'none';
     }
+    document.getElementById('twenty-year').style.cursor = 'default';
+    document.getElementById('nineteen-year').style.cursor = 'pointer';
+    document.getElementById('first-year').style.cursor = 'pointer';
+    document.getElementById('second-year').style.cursor = 'pointer';
+    document.getElementById('third-year').style.cursor = 'pointer';
 });
 // 2021 year
 document.getElementById('first-year').addEventListener('click', function() {
@@ -111,6 +121,11 @@ document.getElementById('first-year').addEventListener('click', function() {
         second_art.style.display = 'none';
         third_art.style.display = 'none';
     }
+    document.getElementById('first-year').style.cursor = 'default';
+    document.getElementById('nineteen-year').style.cursor = 'pointer';
+    document.getElementById('twenty-year').style.cursor = 'pointer';
+    document.getElementById('second-year').style.cursor = 'pointer';
+    document.getElementById('third-year').style.cursor = 'pointer';
 });
 // 2022 year
 document.getElementById('second-year').addEventListener('click', function() {
@@ -132,6 +147,11 @@ document.getElementById('second-year').addEventListener('click', function() {
         second_art.style.display = 'flex';
         third_art.style.display = 'none';
     }
+    document.getElementById('second-year').style.cursor = 'default';
+    document.getElementById('nineteen-year').style.cursor = 'pointer';
+    document.getElementById('twenty-year').style.cursor = 'pointer';
+    document.getElementById('first-year').style.cursor = 'pointer';
+    document.getElementById('third-year').style.cursor = 'pointer';
 });
 // 2023 year
 document.getElementById('third-year').addEventListener('click', function() {
@@ -153,4 +173,41 @@ document.getElementById('third-year').addEventListener('click', function() {
         second_art.style.display = 'none';
         third_art.style.display = 'flex';
     }
+    document.getElementById('third-year').style.cursor = 'default';
+    document.getElementById('nineteen-year').style.cursor = 'pointer';
+    document.getElementById('twenty-year').style.cursor = 'pointer';
+    document.getElementById('first-year').style.cursor = 'pointer';
+    document.getElementById('second-year').style.cursor = 'pointer';
 });
+
+function changeTextBasedOnScreenWidth() {
+    const name_of_place_competition = document.querySelectorAll('.name_of_place-competition');
+    name_of_place_competition.forEach((element) => {
+        if (window.innerWidth < 1768) {
+            element.textContent = 'КОГПОБУ СКПиСО';
+        }
+    });
+}
+window.onload = changeTextBasedOnScreenWidth;
+window.onresize = changeTextBasedOnScreenWidth;
+
+
+
+// Try:
+    // function changeMarginOfBlockYear() {
+    //     const thirdYearBlock = document.getElementById('#third-year');
+    //     const otherYearsBlocks = document.querySelectorAll('.years-twentys');
+    //     if (thirdYearBlock && otherYearsBlocks.elngth > 0) {
+    //         const thirdYearRect = thirdYearBlock.getBoundingClientRect();
+    //     }
+    //     let isBelow = Array.from(otherYearsBlocks).every(block => {
+    //         const blockRect = block.getBoundingClientRect();
+    //         return blockRect.bottom < thirdYearBlock.top;
+    //     });
+    //     if (isBelow) {
+    //         thirdYearBlock.style.marginTop = '-30px';
+    //     } 
+    //     thirdYearBlock.style.marginTop = '';
+    // }
+    // window.onload = changeMarginOfBlockYear;
+    // window.onresize = changeMarginOfBlockYear;
