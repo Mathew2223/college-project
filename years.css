@@ -301,11 +301,6 @@ main {
   text-underline-position: from-font;
 }
 
-.winners-years {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .winners-2019 {
   height: 500px;
 }
@@ -314,6 +309,7 @@ main {
   height: 100px;
   display: flex;
   gap: 40px;
+  flex-wrap: wrap;
 }
 
 .years-twentys {
@@ -403,6 +399,7 @@ img {
 
 .block-winners__div {
   box-sizing: border-box;
+  margin-top: 30px;
 }
 
 .block-winners {
@@ -444,6 +441,7 @@ img {
 .about_member-resulting {
   display: flex;
   flex-direction: column;
+  margin-top: 25px;
 }
 
 .name_of_members-competition {
@@ -473,10 +471,63 @@ img {
   text-decoration: none;
 }
 
+.winners-years {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.years-twentys {
+  height: 45px;
+  width: 110px;
+  border-radius: 25px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+.years-twentys:hover {
+  background: #674fff;
+  transition: 0.35s ease-in-out;
+}
+
+.years-twentys.active {
+  background: #2250CC;
+}
+
+.p-years {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 550;
+  line-height: 40px;
+  letter-spacing: 0.05em;
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  text-decoration: none;
+  text-align: center;
+  text-underline-position: from-font;
+}
+
+.photo-place__block {
+  display: block;
+}
+
+.circle {
+  width: 55px;
+  height: 55px;
+  margin-top: -40px;
+  border-radius: 50%;
+  z-index: 5;
+  position: absolute;
+  margin-left: 34px;
+}
+
 @media (max-width: 1468px) {
   img {
-    width: 150px;
-    height: 150px;
+    width: 160px;
+    height: 160px;
   }
   .buisness_block {
     display: flex;
@@ -498,6 +549,14 @@ img {
     margin-top: 15px;
     line-height: 24px;
   }
+  .circle {
+    margin-left: 40px;
+  }
+}
+@media (max-width: 1192px) {
+  .about_member-resulting {
+    margin-top: 10px;
+  }
 }
 @media (max-width: 1052px) {
   img {
@@ -509,6 +568,31 @@ img {
   }
   .name_of_place-competition {
     font-size: 18px;
+  }
+  .circle {
+    width: 45px;
+    height: 45px;
+    margin-top: -35px;
+    margin-left: 29px;
+  }
+  .p-years {
+    font-size: 18px;
+  }
+  .years-twentys {
+    height: 40px;
+    width: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 800px) {
+  .years-twentys {
+    height: 35px;
+    width: 80px;
+  }
+  .p-years {
+    font-size: 16px;
   }
 }
 @media (max-width: 770px) {
@@ -540,7 +624,6 @@ img {
     line-height: 26px;
   }
   .winners-years {
-    height: 150px;
     justify-content: center;
   }
   .years-hyper_paragraph {
@@ -562,5 +645,8 @@ img {
   }
   .name_of_members-competition {
     font-size: 20px;
+  }
+  .block-winners__div {
+    margin-top: 30px;
   }
 }/*# sourceMappingURL=years.css.map */

@@ -300,11 +300,6 @@ main {
   text-underline-position: from-font;
 }
 
-.winners-years {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .winners-2019 {
   height: 500px;
 }
@@ -313,6 +308,7 @@ main {
   height: 100px;
   display: flex;
   gap: 40px;
+  flex-wrap: wrap;
 }
 
 .years-twentys {

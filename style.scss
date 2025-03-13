@@ -285,10 +285,6 @@ main{
     text-decoration: none;
     @include text-custum();
 }
-.winners-years{
-    display: $flexbox__display-flex;
-    @include wrap();
-}
 .winners-2019{
     height: 500px;
 }
@@ -296,6 +292,7 @@ main{
     height: 100px;
     display: $flexbox__display-flex;
     gap: 40px;
+    @include wrap();
 }
 .years-twentys{
     height: 45px;
