@@ -288,38 +288,6 @@ main{
 .winners-2019{
     height: 500px;
 }
-.winners-years{
-    height: 100px;
-    display: $flexbox__display-flex;
-    gap: 40px;
-    @include wrap();
-}
-.years-twentys{
-    height: 45px;
-    width: 110px;
-    border-radius: 25px;
-    background: transparent;
-    border: 2px solid rgba(256, 256, 256, .8);
-    cursor: $cursor-pointer;
-    transition: 0.4s ease-in-out;
-    &:hover{
-        background: #674fff;
-        transition: 0.35s ease-in-out;
-    }
-}
-.years-twentys.active {
-    background: #2250CC;
-}
-.p-years{
-    font-family: $font-Montserrat;
-    font-size: 20px;
-    font-weight: 550;
-    line-height: 40px;
-    letter-spacing: $letter-spacing_text;
-    color: $almost-white-color;
-    text-decoration: none;
-    @include text-custum();
-}
 
 
 
