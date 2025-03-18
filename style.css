@@ -53,172 +53,6 @@ main {
   transition: opacity 0.3s ease-out;
 }
 
-.members {
-  width: 1000px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 80px;
-  justify-content: center;
-}
-
-.member1 {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: auto;
-  background: #f6f6f6;
-  border-radius: 30px;
-  margin-left: 20px;
-  margin-right: 20px;
-  cursor: pointer;
-  transition: transform 0.3s ease;
-}
-.member1:hover {
-  transform: scale(1.04);
-}
-
-.member1_profile {
-  width: 250px;
-  height: 300px;
-  background: #e0e0e0;
-  border-radius: 10%;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-}
-
-.person_img {
-  width: 280px;
-  height: 280px;
-}
-
-.seperator-wrapper {
-  width: 300px;
-  margin-top: -41px;
-}
-.seperator-wrapper .seperator {
-  width: 250px;
-  height: 3.5px;
-  animation: rotate 2s infinite linear;
-  -webkit-animation: rotate 2s infinite linear;
-}
-@keyframes rotate {
-  from {
-    background-position: -300px;
-  }
-  to {
-    background-position: -50px;
-  }
-}
-.gradient {
-  background: rgb(30, 30, 30); /* Old browsers */ /* FF3.6+ */ /* Chrome10+,Safari5.1+ */ /* Opera 11.10+ */ /* IE10+ */
-  background: linear-gradient(to right, rgb(30, 30, 30) 0%, rgb(50, 50, 50) 25%, rgb(100, 100, 100) 50%, rgb(150, 150, 150) 75%, rgb(30, 30, 30) 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#1e1e1e", endColorstr="#1e1e1e",GradientType=1 ); /* IE6-9 */
-}
-
-.first-place_paragraph {
-  font-family: Montserrat;
-  font-size: 22px;
-  font-weight: 600;
-  line-height: 24px;
-  letter-spacing: 0.05em;
-  color: rgb(24, 28, 41);
-  text-decoration: none;
-  -webkit-text-decoration-skip-ink: none;
-          text-decoration-skip-ink: none;
-  text-decoration: none;
-  text-align: center;
-  text-underline-position: from-font;
-  padding-top: 5%;
-}
-
-.special_student_1 {
-  display: flex;
-  flex-direction: column;
-  padding-left: 300px;
-  padding-top: 10px;
-  position: absolute;
-  width: 800px;
-  gap: 10px;
-}
-
-.special_student-p {
-  font-family: Montserrat;
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 29px;
-  letter-spacing: 0.05em;
-  text-underline-position: from-font;
-  -webkit-text-decoration-skip-ink: none;
-          text-decoration-skip-ink: none;
-  color: rgb(24, 28, 41);
-}
-
-.special_student_2 {
-  display: flex;
-  flex-direction: column;
-  padding-left: 300px;
-  padding-top: 10px;
-  position: absolute;
-  width: 800px;
-  gap: 10px;
-}
-
-@counter-style student-alpha_special_1 {
-  system: fixed;
-  symbols: 📚;
-  suffix: " ";
-}
-.special_student_1 li {
-  list-style: student-alpha_special_1;
-  content: "📚";
-  font-size: 24px;
-}
-
-#diplom {
-  padding-top: 70px;
-}
-
-@counter-style student-alpha_special_2 {
-  system: fixed;
-  symbols: 👨‍🎓️;
-  suffix: " ";
-}
-.special_student_2 li {
-  list-style: student-alpha_special_2;
-  content: "👨‍🎓️";
-  font-size: 24px;
-}
-
-#competition {
-  padding-top: 105px;
-}
-
-.special_student_3 {
-  display: flex;
-  flex-direction: column;
-  padding-left: 300px;
-  padding-top: 10px;
-  position: absolute;
-  width: 800px;
-  gap: 10px;
-}
-
-@counter-style student-alpha_compet {
-  system: fixed;
-  symbols: 🎯;
-  suffix: " ";
-}
-.special_student_3 li {
-  list-style: student-alpha_compet;
-  content: "🎯";
-  font-size: 24px;
-}
-
-.twenty-19-comptetition {
-  color: #1B263B;
-}
-
 .nav-scroll {
   height: 100px;
   display: flex;
@@ -302,6 +136,146 @@ main {
 
 .winners-2019 {
   height: 500px;
+}
+
+.members {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+}
+
+.member-info_block {
+  flex: calc((100% - 60px) / 3);
+  max-width: 1200px;
+  min-width: 1000px;
+  display: flex;
+  flex-direction: row;
+  background: #f6f6f6;
+  border-radius: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.member-info_block:hover {
+  transform: scale(1.04);
+}
+
+.members-info_text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 10px 10px;
+}
+
+.text-members_purple__color {
+  color: mediumslateblue;
+}
+
+.special_student_1 {
+  display: flex;
+  flex-direction: row;
+  width: 800px;
+  gap: 3px;
+  list-style-type: none;
+}
+
+.special_student_1::before {
+  content: "📚";
+  font-size: 24px;
+  margin-right: 5px;
+}
+
+.special_student_2 {
+  display: flex;
+  flex-direction: row;
+  width: 800px;
+  gap: 3px;
+  list-style-type: none;
+}
+
+.special_student_2::before {
+  content: "🎯";
+  font-size: 24px;
+  margin-right: 5px;
+}
+
+.special_student_3 {
+  display: flex;
+  flex-direction: row;
+  width: 800px;
+  gap: 3px;
+  list-style-type: none;
+}
+
+.special_student_3::before {
+  content: "👨‍🎓️";
+  font-size: 24px;
+  margin-right: 5px;
+}
+
+.special_student-p {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 29px;
+  letter-spacing: 0.05em;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: rgb(24, 28, 41);
+}
+
+.twenty-19-comptetition {
+  color: #1B263B;
+  margin-left: 50px;
+}
+
+.person_img {
+  width: 280px;
+  height: 280px;
+}
+
+.seperator-wrapper {
+  width: 300px;
+  margin-top: -41px;
+}
+.seperator-wrapper .seperator {
+  width: 250px;
+  height: 3.5px;
+  animation: rotate 2s infinite linear;
+  -webkit-animation: rotate 2s infinite linear;
+}
+@keyframes rotate {
+  from {
+    background-position: -300px;
+  }
+  to {
+    background-position: -50px;
+  }
+}
+.gradient {
+  background: rgb(30, 30, 30); /* Old browsers */ /* FF3.6+ */ /* Chrome10+,Safari5.1+ */ /* Opera 11.10+ */ /* IE10+ */
+  background: linear-gradient(to right, rgb(30, 30, 30) 0%, rgb(50, 50, 50) 25%, rgb(100, 100, 100) 50%, rgb(150, 150, 150) 75%, rgb(30, 30, 30) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#1e1e1e", endColorstr="#1e1e1e",GradientType=1 ); /* IE6-9 */
+}
+
+.first-place_paragraph {
+  font-family: Montserrat;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.05em;
+  color: rgb(24, 28, 41);
+  text-decoration: none;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  text-decoration: none;
+  text-align: center;
+  text-underline-position: from-font;
+  padding-top: 5%;
 }
 
 @media (max-width: 770px) {
