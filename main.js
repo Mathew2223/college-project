@@ -209,6 +209,31 @@ it_system_button.addEventListener('click', function(){
     this.style.cursor = 'default';
 });
 
+// plus_teacher_button
+// create child for for parent plus teacher block
+const nav_winner_plus_teacher_years = document.createElement('nav');
+nav_winner_plus_teacher_years.id = 'nav-winner-plus-teacher-years';
+nav_winner_plus_teacher_years.className = 'winners-years';
+
+const plus_teacher_2019 = document.createElement('button');
+const plus_teacher_p_2019 = document.createElement('p');
+plus_teacher_p_2019.textContent = '2019';
+plus_teacher_p_2019.className = 'p-years';
+plus_teacher_2019.className = 'years-twentys';
+plus_teacher_2019.id = 'nineteen-year_plus_teacher_2019';
+plus_teacher_2019.appendChild(plus_teacher_p_2019);
+
+const plus_teacher_2020 = document.createElement('button');
+const plus_teacher_p_2020 = document.createElement('p');
+plus_teacher_p_2020.textContent = '2020';
+plus_teacher_p_2020.className = 'p-years';
+plus_teacher_2020.className = 'years-twentys';
+plus_teacher_2020.id = 'nineteen-year_plus_teacher_2020';
+plus_teacher_2020.appendChild(plus_teacher_p_2020);
+
+let years_plus_teacher = [plus_teacher_2019, plus_teacher_2020];
+nav_winner_plus_teacher_years.append(...years_plus_teacher);
+
 const plus_teacher_button = document.getElementById('plus_teacher_button');
 plus_teacher_button.addEventListener('click', function() {
     const nav_winners_years = document.querySelector('.winners-years');
@@ -219,10 +244,18 @@ plus_teacher_button.addEventListener('click', function() {
     it_system_button.style.cursor = 'pointer';
 
     document.getElementById('winners-years2').style.display = 'none';
+    // document.getElementById('nav-winner-plus-teacher-years').style.display = 'flex';
+    document.getElementById('results').appendChild(nav_winner_plus_teacher_years);
 
     this.classList.add('active');
     this.style.cursor = 'default';
 
+    nineteen_art.style.display = 'none';
+    twenty_art.style.display = 'none';
+    first_art.style.display = 'none';
+    second_art.style.display = 'none';
+    third_art.style.display = 'none';
+    fourth_art.style.display = 'none';
     // const nineteen_year_plus_teacher_2019 = document.getElementById('nineteen-year_plus_teacher_2019');
     // nineteen_year_plus_teacher_2019.style.display = 'flex';
 });

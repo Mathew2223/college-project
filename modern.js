@@ -20,14 +20,3 @@ plus_teacher.appendChild(plus_teacher_p);
 
 // add child for winners of year block
 winners_years.appendChild(plus_teacher);
-
-
-
-
-//create child for for parent plus teacher block
-const plus_teacher_2019 = document.createElement('button');
-const plus_teacher_p_2019 = document.createElement('p');
-plus_teacher_p_2019.textContent = '2019';
-plus_teacher_p_2019.className = 'p-years';
-plus_teacher_2019.className = 'years-twentys';
-plus_teacher_2019.id = 'nineteen-year_plus_teacher_2019';
