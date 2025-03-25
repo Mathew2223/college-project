@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="years.css">
+    <link rel="stylesheet" href="navbar.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,9 +16,8 @@
 </head>
 <body>
 <header class="header">
-    <!-- <img class="logo-photo professional-photo" src="LOgo_72.png" alt="logo-professional"> -->
     <div class="name">
-        <h1 class="name p">Участники конкурсов профессионального мастерства в Слободском колледже</h1>
+        <h1 class="name h1">Участники конкурсов профессионального мастерства в Слободском колледже</h1>
     </div>
 </header>
 <main>
@@ -81,7 +81,11 @@
         </div>
     </section>
     <section style="display: none;" class="results" id="results">
-        <nav class="winners-years">
+        <nav class="winners-special" id="winners-years">
+            <h1 class="special__h1">Выберите специальность:</h1>
+            <button id="it-system_button" class="special__block"><p class="p-special">09.02.07</p></button>
+        </nav>
+        <nav class="winners-years" id="winners-years2" style="display: none;">
             <button id="nineteen-year" class="years-twentys"><p class="p-years">2019</p></button>
             <button id="twenty-year" class="years-twentys"><p class="p-years">2020</p></button>
             <button id="first-year" class="years-twentys"><p class="p-years">2021</p></button>
@@ -162,4 +166,5 @@
 </footer>
 <script src="script.js" defer></script>
 <script src="modern.js" defer></script>
+<script src="main.js" defer></script>
 </body>

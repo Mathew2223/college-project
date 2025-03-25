@@ -26,6 +26,7 @@ img{
     margin: 0 auto;
 }
 .years-results{
+    margin-top: 15px;
     display: none;
     justify-content: center;
 }
@@ -108,9 +109,32 @@ img{
 }
 .winners-years{
     display: $flexbox__display-flex;
-    gap: 40px;
+    gap: 60px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    @include wrap();
+}
+.winners-special{
+    display: $flexbox__display-flex;
+    flex-direction: column;
+    gap: 30px;
     align-items: center;
     @include wrap();
+}
+.special__h1{
+    font-family: $font-Montserrat;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: 0.05em;
+    text-underline-position: from-font;
+    color: white;
+    -webkit-text-decoration-skip-ink: none;
+    text-decoration-skip-ink: none;
+    text-decoration: none;
+    text-align: center;
+    text-underline-position: from-font;
 }
 .years-twentys{
     height: 45px;
@@ -128,9 +152,35 @@ img{
 .years-twentys.active {
     background: #2250CC;
 }
+.special__block{
+    height: 50px;
+    width: 130px;
+    border-radius: 25px;
+    background: transparent;
+    border: 2px solid rgba(256, 256, 256, .8);
+    cursor: $cursor-pointer;
+    transition: 0.4s ease-in-out;
+    &:hover{
+        background: #674fff;
+        transition: 0.35s ease-in-out;
+    }
+}
+.special__block.active {
+    background: #2250CC;
+}
 .p-years{
     font-family: $font-Montserrat;
     font-size: 20px;
+    font-weight: 550;
+    line-height: 40px;
+    letter-spacing: $letter-spacing_text;
+    color: $almost-white-color;
+    text-decoration: none;
+    @include text-custum();
+}
+.p-special{
+    font-family: $font-Montserrat;
+    font-size: 21px;
     font-weight: 550;
     line-height: 40px;
     letter-spacing: $letter-spacing_text;
