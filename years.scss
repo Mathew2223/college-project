@@ -136,6 +136,11 @@ img{
     text-align: center;
     text-underline-position: from-font;
 }
+.winners-special__block{
+    display: $flexbox__display-flex;
+    flex-direction: row;
+    gap: 50px;
+}
 .years-twentys{
     height: 45px;
     width: 110px;

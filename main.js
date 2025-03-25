@@ -203,6 +203,26 @@ it_system_button.addEventListener('click', function(){
     if (nav_winners_years.style.display === 'none') {
         nav_winners_years.style.display = 'flex';
     }
+    plus_teacher_button.classList.remove('active');
+    plus_teacher_button.style.cursor = 'pointer';
     this.classList.add('active');
     this.style.cursor = 'default';
+});
+
+const plus_teacher_button = document.getElementById('plus_teacher_button');
+plus_teacher_button.addEventListener('click', function() {
+    const nav_winners_years = document.querySelector('.winners-years');
+    if (nav_winners_years.style.display === 'none') {
+        nav_winners_years.style.display = 'flex';
+    }
+    it_system_button.classList.remove('active');
+    it_system_button.style.cursor = 'pointer';
+
+    document.getElementById('winners-years2').style.display = 'none';
+
+    this.classList.add('active');
+    this.style.cursor = 'default';
+
+    // const nineteen_year_plus_teacher_2019 = document.getElementById('nineteen-year_plus_teacher_2019');
+    // nineteen_year_plus_teacher_2019.style.display = 'flex';
 });
