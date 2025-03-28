@@ -27,6 +27,8 @@ html {
 
 main {
   background-image: url("background-black.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
 .name h1 {
@@ -155,7 +157,7 @@ main {
 }
 
 .member-info_block {
-  flex: calc((100% - 60px) / 3);
+  flex: calc((100% - 60px) / 4);
   max-width: 1200px;
   min-width: 1000px;
   display: flex;
@@ -286,6 +288,30 @@ main {
   padding-top: 5%;
 }
 
+@media (max-width: 1200px) {
+  .member-info_block {
+    min-width: 600px;
+  }
+}
+@media (max-width: 1150px) {
+  .progr-speciality_p {
+    font-size: 22px;
+    transition: color 0.5s ease;
+  }
+  .progr-speciality_p:hover {
+    color: rgb(139, 33, 215);
+    cursor: pointer;
+  }
+}
+@media (max-width: 1150px) and (max-width: 1150px) {
+  .member-info_block {
+    cursor: default;
+    transition: none;
+  }
+  .member-info_block:hover {
+    transform: none;
+  }
+}
 @media (max-width: 770px) {
   .header {
     height: 115px;
