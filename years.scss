@@ -155,6 +155,12 @@ img{
 .years-twentys.active {
     background: #2250CC;
 }
+// #plus_teacher_button{
+//     &:hover{
+//         background: black;
+//     }
+//     cursor: default;
+// }
 .special__block{
     height: 50px;
     width: 130px;
@@ -348,5 +354,13 @@ img{
         height: 35px;
         margin-top: -28px;
         margin-left: 25px;
+    }
+    .years-twentys {
+        height: 45px;
+        width: 100px;
+        border-radius: 20px;
+    }
+    .p-years{
+        font-size: 19px;
     }
 }

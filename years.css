@@ -69,6 +69,7 @@ main {
   position: relative;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .members-switch-text {
@@ -155,12 +156,13 @@ main {
   flex-wrap: wrap;
   gap: 50px;
   justify-content: center;
+  right: 10px;
+  position: relative;
 }
 
 .member-info_block {
   flex: calc((100% - 60px) / 4);
   max-width: 1200px;
-  min-width: 1000px;
   display: flex;
   flex-direction: row;
   background: #f6f6f6;
@@ -258,6 +260,7 @@ main {
   height: 3.5px;
   animation: rotate 2s infinite linear;
   -webkit-animation: rotate 2s infinite linear;
+  margin-left: 25px;
 }
 @keyframes rotate {
   from {
@@ -291,21 +294,49 @@ main {
 
 @media (max-width: 1200px) {
   .member-info_block {
-    min-width: 600px;
+    width: 600px;
   }
 }
 @media (max-width: 1150px) {
   .progr-speciality_p {
     font-size: 22px;
+    transition: color 0.5s ease;
   }
-}
-@media (max-width: 1150px) and (max-width: 1150px) {
+  .progr-speciality_p:hover {
+    color: rgb(139, 33, 215);
+    cursor: pointer;
+  }
+  .person_img {
+    width: 180px;
+    height: 180px;
+  }
   .member-info_block {
     cursor: default;
     transition: none;
+    height: 500px;
+    width: 300px;
   }
   .member-info_block:hover {
     transform: none;
+  }
+  .member1_profile {
+    padding-top: 10px;
+    width: 100%;
+    height: 250px;
+  }
+  .seperator-wrapper {
+    display: none;
+  }
+  .member-info_block {
+    flex-direction: column;
+  }
+  .first-place_paragraph {
+    font-size: 24px;
+  }
+}
+@media (max-width: 900px) {
+  .progr-speciality_p {
+    font-size: 20px;
   }
 }
 @media (max-width: 770px) {
@@ -315,14 +346,6 @@ main {
   .name h1 {
     font-size: 24px;
     line-height: 30px;
-  }
-  .years-twentys {
-    height: 45px;
-    width: 100px;
-    border-radius: 20px;
-  }
-  .p-years {
-    font-size: 19px;
   }
 }
 * {
@@ -700,5 +723,13 @@ img {
     height: 35px;
     margin-top: -28px;
     margin-left: 25px;
+  }
+  .years-twentys {
+    height: 45px;
+    width: 100px;
+    border-radius: 20px;
+  }
+  .p-years {
+    font-size: 19px;
   }
 }/*# sourceMappingURL=years.css.map */

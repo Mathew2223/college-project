@@ -20,3 +20,7 @@ plus_teacher.appendChild(plus_teacher_p);
 
 // add child for winners of year block
 winners_years.appendChild(plus_teacher);
+
+
+//!!!!!important about button = plus_teacher_button
+document.getElementById('plus_teacher_button').disabled = "false";

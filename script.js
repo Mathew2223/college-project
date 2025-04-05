@@ -47,7 +47,9 @@ function changeTextBasedOnScreenWidth() {
             item.textContent = '09.02.03 Программирование в компьютерных системах';
         }
         else if (window.innerWidth <= 1150) {
-            item.innerHTML = '<abbr style="text-decoration: underline;" title="Программирование в компьютерных системах">09.02.03</abbr>';
+            item.innerHTML = '<abbr style="text-decoration: underline;" title="Специальность: Программирование в компьютерных системах">09.02.03</abbr>';
+            document.getElementById('person_img1').src = 'person_2.png';
+            document.getElementById('person_img2').src = 'person_2.png';
         }
         // Try:
         // item.addEventListener('mouseenter', () => {
