@@ -162,7 +162,7 @@ main {
 
 .member-info_block {
   flex: calc((100% - 60px) / 4);
-  max-width: 1200px;
+  max-width: 1100px;
   display: flex;
   flex-direction: row;
   background: #f6f6f6;
