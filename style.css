@@ -155,8 +155,6 @@ main {
   flex-wrap: wrap;
   gap: 50px;
   justify-content: center;
-  right: 10px;
-  position: relative;
 }
 
 .member-info_block {
@@ -297,6 +295,9 @@ main {
   }
 }
 @media (max-width: 1150px) {
+  * {
+    max-width: 100%;
+  }
   .progr-speciality_p {
     font-size: 22px;
     transition: color 0.5s ease;
