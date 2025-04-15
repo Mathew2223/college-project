@@ -238,7 +238,7 @@ main {
   color: rgb(24, 28, 41);
 }
 
-.twenty-19-comptetition {
+.twenty-19-competition {
   color: #1B263B;
   margin-left: 50px;
 }
@@ -307,8 +307,8 @@ main {
     cursor: pointer;
   }
   .person_img {
-    width: 180px;
-    height: 180px;
+    width: 200px;
+    height: 200px;
   }
   .member-info_block {
     cursor: default;
@@ -331,6 +331,7 @@ main {
     flex-direction: column;
   }
   .first-place_paragraph {
+    margin-top: -18px;
     font-size: 24px;
   }
 }

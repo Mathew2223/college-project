@@ -210,10 +210,10 @@ img{
     margin-left: 34px;
 }
 @media (max-width: 1468px) {
-    img{
-        width: 160px;
-        height: 160px;
-    }
+    // img{
+    //     width: 160px;
+    //     height: 160px;
+    // }
     .buisness_block{
         display: $flexbox__display-flex;
         padding-top: 25px;
@@ -235,7 +235,7 @@ img{
         line-height: 24px;
     }
     .circle{
-        margin-left: 40px;
+        margin-left: 35px;
     }
 }
 @media (max-width: 1192px) {
@@ -243,11 +243,17 @@ img{
         margin-top: 10px;
     }
 }
-@media (max-width: 1052px) {
+@media (max-width: 1150px) {
     img{
-        width: 130px;
-        height: 130px;
+        width: 160px;
+        height: 150px;
     }
+}
+@media (max-width: 1052px) {
+    // img{
+    //     width: 130px;
+    //     height: 130px;
+    // }
     .name_of_members-competition{
         font-size: 22px;
     }
@@ -255,10 +261,10 @@ img{
         font-size: 18px;
     }
     .circle{
-        width: 45px;
-        height: 45px;
+        width: 50px;
+        height: 50px;
         margin-top: -35px;
-        margin-left: 29px;
+        margin-left: 35px;
     }
     .p-years{
         font-size: 18px;
@@ -281,7 +287,7 @@ img{
 @media (max-width: 770px) {
     img{
         width: 110px;
-        height: 110px;
+        height: 100px;
     }
     .name h1 {
         font-size: 24px;
@@ -353,7 +359,7 @@ img{
         width: 35px;
         height: 35px;
         margin-top: -28px;
-        margin-left: 25px;
+        margin-left: 16px;
     }
     .years-twentys {
         height: 45px;

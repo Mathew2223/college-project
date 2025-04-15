@@ -7,6 +7,51 @@ let members = [
         title: 'Седов Алексей',
         speciality: '09.02.03 Программирование в компьютерных системах'
     },
+    {
+        element: document.createElement('div'),
+        title: 'Черных Александр',
+        speciality: '09.02.03 Программирование в компьютерных системах'
+    },
+    {
+        element: document.createElement('div'),
+        title: 'Екимова Наталья',
+        speciality: '09.02.03 Программирование в компьютерных системах'
+    },
+    {
+        element: document.createElement('div'),
+        title: 'Порошина Дарья',
+        speciality: '09.02.03 Программирование в компьютерных системах'
+    },
+    {
+        element: document.createElement('div'),
+        title: 'Бобров Антон',
+        speciality: '09.02.03 Программирование в компьютерных системах'
+    },
+    {
+        element: document.createElement('div'),
+        title: 'Бутин Артем',
+        speciality: '09.02.03 Программирование в компьютерных системах'
+    },
+    {
+        element: document.createElement('div'),
+        title: 'Калинин Арсений',
+        speciality: '09.02.03 Программирование в компьютерных системах'
+    },
+    {
+        element: document.createElement('div'),
+        title: 'Хамидуллин Айрат',
+        speciality: '09.02.03 Программирование в компьютерных системах'
+    },
+    {
+        element: document.createElement('div'),
+        title: 'Коротких Наталья',
+        speciality: '09.02.03 Программирование в компьютерных системах'
+    },
+    {
+        element: document.createElement('div'),
+        title: 'Шмыров Егор',
+        speciality: '09.02.03 Программирование в компьютерных системах'
+    },
 ];
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -85,12 +130,10 @@ function changeTextBasedOnScreenWidth() {
         }
         else if (window.innerWidth <= 1150) {
             item.innerHTML = '<abbr style="text-decoration: underline;" title=>09.02.03</abbr>';
-            document.getElementById('person_img1').src = 'person_2.png';
-            document.getElementById('person_img2').src = 'person_2.png';
         }
     });
 
-    document.querySelectorAll('.members-switch-text').forEach((item) => {
+    document.querySelector('.members-switch-text').forEach((item) => {
         if (window.innerWidth < 500) {
             item.textContent = 'Результаты';
         }
