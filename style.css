@@ -226,6 +226,20 @@ main {
   margin-right: 5px;
 }
 
+.special_student_results {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  gap: 5px;
+}
+
+.special_student_results::before {
+  content: "✔";
+  font-size: 24px;
+  margin-right: 5px;
+  margin-left: 50px;
+}
+
 .special_student-p {
   font-family: Montserrat;
   font-size: 18px;
@@ -240,7 +254,6 @@ main {
 
 .twenty-19-competition {
   color: #1B263B;
-  margin-left: 50px;
 }
 
 .person_img {
@@ -329,15 +342,18 @@ main {
   }
   .member-info_block {
     flex-direction: column;
+    height: 100%;
+    padding-bottom: 10px;
   }
   .first-place_paragraph {
-    margin-top: -18px;
+    margin-top: -15px;
     font-size: 24px;
+    padding: 20px;
   }
 }
 @media (max-width: 900px) {
   .progr-speciality_p {
-    font-size: 20px;
+    font-size: 22px;
   }
 }
 @media (max-width: 770px) {

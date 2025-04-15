@@ -103,7 +103,8 @@ document.addEventListener('DOMContentLoaded', function() {
         diploms.appendChild(special_student_p3);
         competition.appendChild(special_student_p2);
         speciality.appendChild(special_student_p1);
-        membersInfo.append(speciality, competition, diploms);
+        membersInfo.append(speciality, competition);
+        // ^ - diploms
         seperator.appendChild(seperatorGradient);
         biography_block.append(img, seperator, title);
         member.element.appendChild(biography_block);
@@ -129,15 +130,15 @@ function changeTextBasedOnScreenWidth() {
             item.textContent = Object.values(speciality);
         }
         else if (window.innerWidth <= 1150) {
-            item.innerHTML = '<abbr style="text-decoration: underline;" title=>09.02.03</abbr>';
+            item.innerHTML = '<abbr style="text-decoration: underline;" title="Программирование в компьютерных системах">09.02.03</abbr>';
         }
     });
 
-    document.querySelector('.members-switch-text').forEach((item) => {
+    document.querySelector('#result-members-compet_text') = () => {
         if (window.innerWidth < 500) {
-            item.textContent = 'Результаты';
+            document.querySelector('#result-members-compet_text').textContent = 'Результаты';
         }
-    });
+    }
 }
 
 window.onload = changeTextBasedOnScreenWidth;
