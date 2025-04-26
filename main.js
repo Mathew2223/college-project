@@ -1,5 +1,6 @@
 // main
-document.getElementById('members-circle').addEventListener('click', function(){
+const members_circle = document.getElementById('members-circle');
+members_circle.addEventListener('click', function(){
     const members = document.getElementById('members');
     const results = document.getElementById('results');
 

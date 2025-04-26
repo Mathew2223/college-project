@@ -167,10 +167,6 @@ main {
   margin-left: 20px;
   margin-right: 20px;
   cursor: pointer;
-  transition: transform 0.3s ease;
-}
-.member-info_block:hover {
-  transform: scale(1.04);
 }
 
 .members-info_text {

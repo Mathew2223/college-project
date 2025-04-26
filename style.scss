@@ -154,10 +154,10 @@ main{
     margin-left: 20px;
     margin-right: 20px;
     cursor: pointer;
-    transition: transform 0.3s ease;
-    &:hover {
-        transform: scale(1.04);
-    }
+    // transition: transform 0.3s ease;
+    // &:hover {
+    //     transform: scale(1.04);
+    // }
 }
 .members-info_text{
     display: flex;
@@ -305,7 +305,7 @@ main{
         width: 200px;
         height: 200px;
     }
-    .member-info_block {
+    .member-info_block{
         cursor: default;
         transition: none;
         &:hover{
