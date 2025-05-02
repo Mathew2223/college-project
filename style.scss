@@ -225,10 +225,36 @@ main{
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
     color: $almost-black-color-p;
+    text-decoration: none;
+}
+.special_student-p__purple,
+.special_student-p__purple .twenty-19-competition{
+    font-family: $font-Montserrat;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 29px;
+    letter-spacing: $letter-spacing_text;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: $almost-black-color-p;
+    text-decoration: none;
+    transition: color 0.5s ease;
+}
+.special_student-p__purple:hover,
+.special_student-p__purple:hover .twenty-19-competition {
+    color: rgb(139, 33, 215);
 }
 .twenty-19-competition{
     color: #1B263B;
-    // margin-left: 50px;
+}
+.brown_color{
+    color: #CD7F32;
+}
+.silver_color{
+    color: #696969;
+}
+.gold_color{
+    color: #FFBA00;
 }
 .person_img{
     width: 280px;

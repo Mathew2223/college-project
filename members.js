@@ -5,84 +5,98 @@ let members = [
         element: document.createElement('div'),
         title: 'Радыгин Алексей',
         speciality: '09.02.03 Программирование в компьютерных системах',
+        href: 'https://aviakat.ru/downloads/rumo/olimp/o_ved.pdf',
         experting: 'А.А. Махнев',
-        competition_results: ['3 место во Всероссийской олимпиаде профессионального мастерства 2019 год']
+        competition_results: ['<span class="silver_color">2 место</span> во Всероссийской олимпиаде профессионального мастерства 2019 год'],
+        // bb_year: 'Год выпуска:'
     },
     {
         element: document.createElement('div'),
         title: 'Седов Алексей',
         speciality: '09.02.03 Программирование в компьютерных системах',
+        href: 'https://goo.su/B7hGGVv',
         experting: 'А.А. Махнев',
-        competition_results: ['3 место по компетенции "Программные решения для бизнеса", г.Вятские Поляны – февраль 2021 год']
+        competition_results: ['<span class="brown_color">3 место</span> по компетенции "Программные решения для бизнеса", г.Вятские Поляны – февраль 2021 год']
     },
     {
         element: document.createElement('div'),
         title: 'Черных Александр',
         speciality: '09.02.03 Программирование в компьютерных системах',
+        href: 'https://goo.su/mmywkB',
         experting: '',
-        competition_results: ['3 место по компетенции "Программные решения для бизнеса", г.Вятские Поляны – февраль 2020 год']
+        competition_results: ['<span class="brown_color">3 место</span> по компетенции "Программные решения для бизнеса", г.Вятские Поляны – февраль 2020 год']
     },
     {
         element: document.createElement('div'),
         title: 'Екимова Наталья',
         speciality: '09.02.03 Программирование в компьютерных системах',
+        href: 'https://goo.su/Wvy7R',
         experting: '',
-        competition_results: ['1 место Компетенция «ИТ-решения для бизнеса на платформе «1С:Предприятие 8»» – февраль 2020 год']
+        competition_results: ['<span class="gold_color">1 место</span> по компетенции «ИТ-решения для бизнеса на платформе «1С:Предприятие 8»» – февраль 2020 год']
     },
     {
         element: document.createElement('div'),
         title: 'Порошина Дарья',
         speciality: '09.02.03 Программирование в компьютерных системах',
+        href: 'https://goo.su/kmjIDB',
         experting: '',
-        competition_results: ['3 место по компетенции "ИТ-решения для бизнеса на платформе 1С", г.Вятские Поляны – февраль 2021 год']
+        competition_results: ['<span class="brown_color">3 место</span> по компетенции "ИТ-решения для бизнеса на платформе 1С", г.Вятские Поляны – февраль 2021 год']
     },
     {
         element: document.createElement('div'),
         title: 'Бобров Антон',
         speciality: '09.02.03 Программирование в компьютерных системах',
+        href: 'https://goo.su/RPtg',
         experting: '',
-        competition_results: ['медальон «За профессионализм» по компетенции «ИТ - решения для бизнеса на платформе "1С: Предприятие 8"», г.Вятские Поляны – февраль 2019 год']
+        competition_results: ['Медальон «За профессионализм» по компетенции «ИТ - решения для бизнеса на платформе "1С: Предприятие 8"», г.Вятские Поляны – февраль 2019 год']
     },
     {
         element: document.createElement('div'),
         title: 'Бутин Артем',
         speciality: '09.02.07 Информационные системы и программирование',
+        href: 'https://goo.su/qr5Tta',
         experting: '',
-        competition_results: ['1 место, по компетенции "Программные решения для бизнеса", г.Вятские Поляны – февраль 2022 год']
+        competition_results: ['<span class="gold_color">1 место</span> по компетенции "Программные решения для бизнеса", г.Вятские Поляны – февраль 2022 год']
     },
     {
         element: document.createElement('div'),
         title: 'Калинин Арсений',
         speciality: '09.02.07 Информационные системы и программирование',
+        href: 'https://vk.com/wall-24316094_4370?ysclid=m3v9uf465f986520444',
+        // 2 место - https://vk.com/wall-24316094_6450?ysclid=m3v9ssfyj6720591635
         experting: '',
-        competition_results: ['3 место, по компетенции "ИТ-решения для бизнеса на платформе 1С", г.Вятские Поляны – февраль 2022 год']
-        // competition_results2: '2 место, по компетенции «Разработка мобильных приложений», г.Киров –март 2023'
+        competition_results: ['<span class="brown_color">3 место</span> по компетенции "ИТ-решения для бизнеса на платформе 1С", г.Вятские Поляны – февраль 2022 год']
+        // competition_results2: '<span class="silver_color">2 место</span>, по компетенции «Разработка мобильных приложений», г.Киров –март 2023'
     },
     {
         element: document.createElement('div'),
         title: 'Хамидуллин Айрат',
         speciality: '09.02.07 Программирование в компьютерных системах',
+        href: 'https://goo.su/Yk6Z',
         experting: '',
-        competition_results: ['1 место, по компетенции "Программные решения для бизнеса", г.Вятские Поляны – март 2023 год']
+        competition_results: [`<span class="gold_color">1 место</span> по компетенции "Программные решения для бизнеса", г.Вятские Поляны – март 2023 год`]
     },
     {
         element: document.createElement('div'),
         title: 'Коротких Наталья',
         speciality: '09.02.07 Информационные системы и программирование',
+        href: '',
         experting: '',
-        competition_results: ['1 место по компетенции "Программные решения для бизнеса", г.Вятские Поляны – март 2024 год']
+        competition_results: ['<span class="gold_color">1 место</span> по компетенции "Программные решения для бизнеса", г.Вятские Поляны – март 2024 год']
     },
     {
         element: document.createElement('div'),
         title: 'Выдрин Семён',
+        href: '',
         competition_results: ['Эксперт чемпионата по компетенции «ИТ-решения для бизнеса на платформе «1С:Предприятие 8», г.Вятские Поляны – февраль 2022, март 2023 год']
     },
     {
         element: document.createElement('div'),
         title: 'Шмыров Егор',
         speciality: '09.02.07 Программирование в компьютерных системах',
+        href: '',
         experting: '',
-        competition_results: ['3 место по компетенции "Программные решения для бизнеса", г.Вятские Поляны – март 2024 год','<br>', 
+        competition_results: ['<span class="brown_color">3 место</span>  по компетенции "Программные решения для бизнеса", г.Вятские Поляны – март 2024 год','<br>', 
         'участник по компетенции "Программные решения для бизнеса", г.Вятские Поляны – март 2023 год']
     },
 ];
@@ -133,12 +147,13 @@ document.addEventListener('DOMContentLoaded', function() {
         const special_student_results = document.createElement('li');
         special_student_results.className = 'special_student_results';
         member.competition_results.forEach((item) => {
-            const special_student_p = document.createElement('p');
-            special_student_p.className = 'special_student-p';
+            const special_student_p = document.createElement('a');
+            special_student_p.href = member.href
+            special_student_p.setAttribute('target', '_blank');
+            special_student_p.className = 'special_student-p__purple';
             const twenty_competition = document.createElement('a');
-            twenty_competition.className = 'twenty-19-competition';
-            twenty_competition.innerHTML = item
-            special_student_p.appendChild(twenty_competition)
+            twenty_competition.innerHTML = item;
+            special_student_p.appendChild(twenty_competition);
             special_student_results.appendChild(special_student_p);
         });
 
@@ -167,7 +182,7 @@ function changeTextBasedOnScreenWidth() {
         }
     });
 
-    const special_window_size = document.querySelectorAll('.progr-speciality_p');
+    // const special_window_size = document.querySelectorAll('.progr-speciality_p');
     // special_window_size.forEach((item) => {
     //     // if (window.innerWidth < 2100 && window.innerWidth > 1150) {
     //     //     item.textContent = Object.values(speciality);
