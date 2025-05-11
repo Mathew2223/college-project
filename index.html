@@ -28,7 +28,6 @@
               <div class="members-switch-circle-right" id="circle-right"></div>
             </div>
             <h2 id="result-members-compet_text" class="members-switch-text">Компетенции</h2>
-          </div>
         </div>
     </nav>
     <section class="members" id="members">
@@ -37,8 +36,7 @@
             <div class="member1_profile" id="member1_profile">
                 <img class="person_img" id="person_img1" src="person.png" alt="member 1">
                 <section class="seperator-wrapper">
-                    <div class="seperator gradient">
-                    </div>
+                    <div class="seperator gradient"></div>
                 </section>
                 <p class="first-place_paragraph">Лапихин Алексей</p>
             </div>  
@@ -49,14 +47,28 @@
                 <li class="special_student_2">
                     <p class="special_student-p"><span class="text-members_purple__color">Участие в конкурсах:</span></p>
                     <li class="special_student_results">
-                        <a class="special_student-p__purple" href="https://goo.su/Y6AjCU" target="_blank"><span style="color: #1B263B;" class="twenty-19-competition">4 место</span> по компетенции "Программные решения для бизнеса", г.Вятские Поляны (первый участник)</a>
+                        <a class="special_student-p__purple" href="https://slobkoll.ru/news/239/66/student-kolledzha-uchastnik-III-regionalnogo-chempionata-World-Skills-molodye-professionaly/" target="_blank"><span style="color: #1B263B;" class="twenty-19-competition">4 место</span> по компетенции "Программные решения для бизнеса", г.Вятские Поляны (первый участник)</a>
                     </li>
+                    <div class="competition_photos">
+                        <img class="competition_photo" src="members_photos/DSC03333 (1024x682).jpg" alt="" onclick="openPopup(this.src)">
+                        <img class="competition_photo" src="members_photos/DSC02834 (1024x682).jpg" alt="" onclick="openPopup(this.src)">
+                        <div class="popup" id="popup" onclick="closePopup()">
+                            <img id="popup-img" src="" alt="">
+                        </div>
+                    </div>
                     <li class="special_student_results">
-                        <a class="special_student-p__purple" href="https://goo.su/bUjHy9W" target="_blank"><span class="twenty-19-competition"><span class="silver_color">2 место </span> по компетенции «Программные решения для бизнеса»,<br>WorldSkills Russia, СКПиСО (2018г)</span></a>
+                        <a class="special_student-p__purple" href="https://slobkoll.ru/news/347/66/otborochnyj-chempionat-molodye-professionaly/" target="_blank"><span class="twenty-19-competition"><span class="silver_color">2 место </span> по компетенции «Программные решения для бизнеса»,<br>WorldSkills Russia, СКПиСО (2018г)</span></a>
                     </li>
+                    <div class="competition_photos">
+                        <img class="competition_photo" src="members_photos/SAM_8352.jpeg" alt="" onclick="openPopup(this.src)">
+                        <img class="competition_photo" src="members_photos/SAM_8363.jpeg" alt="" onclick="openPopup(this.src)">
+                        <div class="popup" id="popup" onclick="closePopup()">
+                            <img id="popup-img" src="" alt="">
+                        </div>
+                    </div>
                 </li>
                 <li class="special_student_3">
-                    <p class="special_student-p"><a class="text-members_purple__color">Эксперт: </a></p>
+                    <p class="special_student-p"><a class="text-members_purple__color">Эксперт: </a>А.А.Махнёв</p>
                 </li>
             </ul>
         </div>
@@ -76,14 +88,20 @@
                 <li class="special_student_2">
                     <p class="special_student-p"><span class="text-members_purple__color">Участие в конкурсах:</span></p>
                     <li class="special_student_results">
-                        <a class="special_student-p__purple" href="https://goo.su/bUjHy9W" target="_blank"><span class="twenty-19-competition"><span class="brown_color">3 место </span> по компетенции «Программные решения для бизнеса»,<br>WorldSkills Russia, СКПиСО (2018г)</span></a>
+                        <a class="special_student-p__purple" href="https://slobkoll.ru/news/347/66/otborochnyj-chempionat-molodye-professionaly/" target="_blank"><span class="twenty-19-competition"><span class="brown_color">3 место </span> по компетенции «Программные решения для бизнеса»,<br>WorldSkills Russia, СКПиСО (2018г)</span></a>
                     </li>
                     <li class="special_student_results">
-                        <a class="special_student-p__purple" href="https://goo.su/PKzrX" target="_blank"><span class="twenty-19-competition"><span class="brown_color">3 место </span> по компетенции «Программные решения для бизнеса»,<br>г.Вятские Поляны (2019г)</span></a>
+                        <a class="special_student-p__purple" href="https://www.vpmt.ru/node/11622?ysclid=m3nhp5klre516209245" target="_blank"><span class="twenty-19-competition"><span class="brown_color">3 место </span> по компетенции «Программные решения для бизнеса»,<br>г.Вятские Поляны (2019г)</span></a>
                     </li>
+                    <div class="competition_photos">
+                        <img class="competition_photo" src="members_photos/cheglakov.jpg" alt="" onclick="openPopup(this.src)">
+                        <div class="popup" id="popup" onclick="closePopup()">
+                            <img id="popup-img" src="" alt="">
+                        </div>
+                    </div>
                 </li>
                 <li class="special_student_3">
-                    <p class="special_student-p"><span class="text-members_purple__color">Эксперт: </span></p>
+                    <p class="special_student-p"><span class="text-members_purple__color">Эксперт: </span>А.А.Махнёв</p>
                 </li>
             </ul>
         </div>
@@ -176,6 +194,28 @@
 </footer>
 <script src="script.js" defer></script>
 <script src="modern.js" defer></script>
-<script type="module" src="main.js" defer></script>
-<script type="module" src="members.js" defer></script>
+<script type="module" src="main.js"></script>
+<script type="module" src="members.js"></script>
+<script>
+    function openPopup(src) {
+        const popupImg = document.getElementById('popup-img');
+        const popup = document.getElementById('popup');
+        popupImg.src = src;
+        popupImg.classList.add('large-img');
+        popup.style.display = 'flex';
+        popup.classList.add('visible');
+    }
+    function closePopup() {
+        const popup = document.getElementById('popup')
+        popup.classList.remove('visible');
+        setTimeout(() => {
+            popup.style.display = 'none';
+        }, 500);
+    }
+    document.addEventListener('keydown', function(event) {
+            if (event.key = 'Escape') {
+                closePopup();
+            }
+    });
+</script>
 </body>

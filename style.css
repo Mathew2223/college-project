@@ -63,12 +63,15 @@ main {
 .member1_profile {
   width: 250px;
   height: 300px;
+  height: 100%;
   background: #e0e0e0;
-  border-radius: 10%;
+  border-radius: 10% 0 0 10%;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 20px;
+  justify-content: flex-end;
 }
 
 .members-switch-text {
@@ -76,7 +79,7 @@ main {
   font-size: 22px;
   font-weight: 600;
   line-height: 40px;
-  letter-spacing: 0 0.05em;
+  letter-spacing: 0.05em;
   text-underline-position: from-font;
   -webkit-text-decoration-skip-ink: none;
           text-decoration-skip-ink: none;
@@ -329,6 +332,56 @@ main {
   text-align: center;
   text-underline-position: from-font;
   padding-top: 5%;
+}
+
+.competition_photos {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  padding: 10px 0;
+  margin-left: 100px;
+}
+
+.competition_photo {
+  border-radius: 10px;
+  width: 240px;
+  height: 160px;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+}
+
+.popup img {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.large-img {
+  width: 800px;
+  height: auto;
+}
+
+.popup {
+  display: none;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.popup.visible {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
 }
 
 @media (max-width: 1200px) {

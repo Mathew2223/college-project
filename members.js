@@ -6,7 +6,8 @@ let members = [
         title: 'Радыгин Алексей',
         speciality: '09.02.03 Программирование в компьютерных системах',
         href: 'https://aviakat.ru/downloads/rumo/olimp/o_ved.pdf',
-        experting: 'А.А. Махнев',
+        photo_href: [],
+        experting: 'А.А.Махнёв',
         competition_results: ['<span class="silver_color">2 место</span> во Всероссийской олимпиаде профессионального мастерства 2019 год'],
         // bb_year: 'Год выпуска:'
     },
@@ -14,15 +15,17 @@ let members = [
         element: document.createElement('div'),
         title: 'Седов Алексей',
         speciality: '09.02.03 Программирование в компьютерных системах',
-        href: 'https://goo.su/B7hGGVv',
-        experting: 'А.А. Махнев',
+        href: 'https://vk.com/wall-24316094_3275?ysclid=m3ninxj0vo565605635',
+        photo_href: ['members_photos/sedov.jpg'],
+        experting: 'А.А.Махнёв',
         competition_results: ['<span class="brown_color">3 место</span> по компетенции "Программные решения для бизнеса", г.Вятские Поляны – февраль 2021 год']
     },
     {
         element: document.createElement('div'),
         title: 'Черных Александр',
         speciality: '09.02.03 Программирование в компьютерных системах',
-        href: 'https://goo.su/mmywkB',
+        href: 'https://www.vpmt.ru/node/11793?ysclid=m3nhgcz1th593378480',
+        photo_href: ['members_photos/chernih.jpg'],
         experting: '',
         competition_results: ['<span class="brown_color">3 место</span> по компетенции "Программные решения для бизнеса", г.Вятские Поляны – февраль 2020 год']
     },
@@ -30,7 +33,8 @@ let members = [
         element: document.createElement('div'),
         title: 'Екимова Наталья',
         speciality: '09.02.03 Программирование в компьютерных системах',
-        href: 'https://goo.su/Wvy7R',
+        href: 'https://www.vpmt.ru/node/11793?ysclid=m3nhgcz1th593378480',
+        photo_href: ['members_photos/ekimova.jpg'],
         experting: '',
         competition_results: ['<span class="gold_color">1 место</span> по компетенции «ИТ-решения для бизнеса на платформе «1С:Предприятие 8»» – февраль 2020 год']
     },
@@ -38,15 +42,17 @@ let members = [
         element: document.createElement('div'),
         title: 'Порошина Дарья',
         speciality: '09.02.03 Программирование в компьютерных системах',
-        href: 'https://goo.su/kmjIDB',
-        experting: '',
+        href: 'https://vk.com/wall-24316094_3275?ysclid=m3ninxj0vo565605635',
+        photo_href: ['members_photos/poroshina.jpg', 'members_photos/poroshina2.jpg'],
+        experting: 'А.С.Бобров',
         competition_results: ['<span class="brown_color">3 место</span> по компетенции "ИТ-решения для бизнеса на платформе 1С", г.Вятские Поляны – февраль 2021 год']
     },
     {
         element: document.createElement('div'),
         title: 'Бобров Антон',
         speciality: '09.02.03 Программирование в компьютерных системах',
-        href: 'https://goo.su/RPtg',
+        href: 'https://www.vpmt.ru/node/11622?ysclid=m3nhp5klre516209245',
+        photo_href: ['members_photos/bobrov.jpg'],
         experting: '',
         competition_results: ['Медальон «За профессионализм» по компетенции «ИТ - решения для бизнеса на платформе "1С: Предприятие 8"», г.Вятские Поляны – февраль 2019 год']
     },
@@ -54,8 +60,9 @@ let members = [
         element: document.createElement('div'),
         title: 'Бутин Артем',
         speciality: '09.02.07 Информационные системы и программирование',
-        href: 'https://goo.su/qr5Tta',
-        experting: '',
+        href: 'https://vk.com/wall-24316094_4370?ysclid=m3v9uf465f986520444',
+        photo_href: [],
+        experting: 'А.А.Махнёв',
         competition_results: ['<span class="gold_color">1 место</span> по компетенции "Программные решения для бизнеса", г.Вятские Поляны – февраль 2022 год']
     },
     {
@@ -64,7 +71,8 @@ let members = [
         speciality: '09.02.07 Информационные системы и программирование',
         href: 'https://vk.com/wall-24316094_4370?ysclid=m3v9uf465f986520444',
         // 2 место - https://vk.com/wall-24316094_6450?ysclid=m3v9ssfyj6720591635
-        experting: '',
+        photo_href: [],
+        experting: 'С.Т.Выдрина',
         competition_results: ['<span class="brown_color">3 место</span> по компетенции "ИТ-решения для бизнеса на платформе 1С", г.Вятские Поляны – февраль 2022 год']
         // competition_results2: '<span class="silver_color">2 место</span>, по компетенции «Разработка мобильных приложений», г.Киров –март 2023'
     },
@@ -72,7 +80,8 @@ let members = [
         element: document.createElement('div'),
         title: 'Хамидуллин Айрат',
         speciality: '09.02.07 Программирование в компьютерных системах',
-        href: 'https://goo.su/Yk6Z',
+        href: 'https://www.vpmt.ru/node/12337?ysclid=m3ni15wj17202705121',
+        photo_href: ['members_photos/hamidullin.jpeg'],
         experting: '',
         competition_results: [`<span class="gold_color">1 место</span> по компетенции "Программные решения для бизнеса", г.Вятские Поляны – март 2023 год`]
     },
@@ -80,22 +89,26 @@ let members = [
         element: document.createElement('div'),
         title: 'Коротких Наталья',
         speciality: '09.02.07 Информационные системы и программирование',
-        href: '',
-        experting: '',
+        href: 'https://slobkoll.ru/news/1013/66/regionalnyj-etap-chempionata-po-professionalnomu-masterstvu-professionaly/',
+        photo_href: [],
+        experting: 'А.А.Махнёв',
         competition_results: ['<span class="gold_color">1 место</span> по компетенции "Программные решения для бизнеса", г.Вятские Поляны – март 2024 год']
     },
     {
         element: document.createElement('div'),
         title: 'Выдрин Семён',
         href: '',
-        competition_results: ['Эксперт чемпионата по компетенции «ИТ-решения для бизнеса на платформе «1С:Предприятие 8», г.Вятские Поляны – февраль 2022, март 2023 год']
+        photo_href: [],
+        competition_results: ['Эксперт чемпионата по компетенции «ИТ-решения для бизнеса на платформе «1С:Предприятие 8», г.Вятские Поляны – февраль 2022, март 2023 год'],
+        experting: ''
     },
     {
         element: document.createElement('div'),
         title: 'Шмыров Егор',
         speciality: '09.02.07 Программирование в компьютерных системах',
-        href: '',
-        experting: '',
+        href: 'https://slobkoll.ru/news/1013/66/regionalnyj-etap-chempionata-po-professionalnomu-masterstvu-professionaly/',
+        photo_href: [],
+        experting: 'Н.С.Пентин',
         competition_results: ['<span class="brown_color">3 место</span>  по компетенции "Программные решения для бизнеса", г.Вятские Поляны – март 2024 год','<br>', 
         'участник по компетенции "Программные решения для бизнеса", г.Вятские Поляны – март 2023 год']
     },
@@ -146,6 +159,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         const special_student_results = document.createElement('li');
         special_student_results.className = 'special_student_results';
+
         member.competition_results.forEach((item) => {
             const special_student_p = document.createElement('a');
             special_student_p.href = member.href
@@ -157,11 +171,43 @@ document.addEventListener('DOMContentLoaded', function() {
             special_student_results.appendChild(special_student_p);
         });
 
+        // Блок кода для competition_photo
+        const competitionPhotosDiv = document.createElement('div');
+        competitionPhotosDiv.className = 'competition_photos';
+
+        member.photo_href.forEach(function(photo) { // Use the array
+            const competitionPhotoImg = document.createElement('img');
+            competitionPhotoImg.className = 'competition_photo';
+            competitionPhotoImg.src = photo; // Set source from array
+
+            competitionPhotoImg.onclick = function() {
+                openPopup(this.src);
+            };
+
+            competitionPhotosDiv.appendChild(competitionPhotoImg);
+                
+            const popupDiv = document.createElement('div');
+            popupDiv.className = 'popup';
+            popupDiv.id = 'popup';
+            popupDiv.onclick = closePopup;
+    
+            const popupImg = document.createElement('img');
+            popupImg.id = 'popup-img';
+            popupImg.src = '';
+            popupImg.alt = '';
+    
+            popupDiv.appendChild(popupImg);
+            competitionPhotosDiv.appendChild(popupDiv);
+        });
+
         // append children
         expert.appendChild(special_student_p3);
         competition.append(special_student_p2);
         speciality.appendChild(special_student_p1);
         membersInfo.append(speciality, competition, special_student_results, expert);
+        (member.photo_href.length != 0) ? membersInfo.append(speciality, competition, special_student_results, competitionPhotosDiv, expert) : membersInfo.append(speciality, competition, special_student_results, expert);
+        
+        
         // ^ - expert
         seperator.appendChild(seperatorGradient);
         biography_block.append(img, seperator, title);
@@ -171,7 +217,15 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-
+// const competition_photos = document.createElement('div');
+// competition_photos.className = 'competition_photos';
+// const popup_photos = document.createElement('div');
+// popup_photos.className = 'popup';
+// const popup_img = document.createElement('img');
+// popup_img.className = 'competition_photo';
+// const popup_img_js = document.createElement('img');
+// popup_img_js.id = 'popup-img';
+// popup_photos.appendChild(popup_img_js);
 
 // function on basedScreenWidth
 function changeTextBasedOnScreenWidth() {
@@ -181,16 +235,6 @@ function changeTextBasedOnScreenWidth() {
             element.textContent = 'КОГПОБУ СКПиСО';
         }
     });
-
-    // const special_window_size = document.querySelectorAll('.progr-speciality_p');
-    // special_window_size.forEach((item) => {
-    //     // if (window.innerWidth < 2100 && window.innerWidth > 1150) {
-    //     //     item.textContent = Object.values(speciality);
-    //     // }
-    //     if (window.innerWidth <= 1150) {
-    //         item.innerHTML = '<abbr style="text-decoration: underline;" title="Программирование в компьютерных системах">09.02.03</abbr>';
-    //     }
-    // });
 
     document.querySelector('#result-members-compet_text') = () => {
         if (window.innerWidth < 500) {
