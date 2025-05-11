@@ -156,11 +156,7 @@ main{
     border-radius: 30px;
     margin-left: 20px;
     margin-right: 20px;
-    cursor: pointer;
-    // transition: transform 0.3s ease;
-    // &:hover {
-    //     transform: scale(1.04);
-    // }
+    cursor: default;
 }
 .members-info_text{
     display: flex;
@@ -229,23 +225,6 @@ main{
     text-decoration-skip-ink: none;
     color: $almost-black-color-p;
     text-decoration: none;
-}
-.special_student-p__purple,
-.special_student-p__purple .twenty-19-competition{
-    font-family: $font-Montserrat;
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 29px;
-    letter-spacing: $letter-spacing_text;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-    color: $almost-black-color-p;
-    text-decoration: none;
-    transition: color 0.5s ease;
-}
-.special_student-p__purple:hover,
-.special_student-p__purple:hover .twenty-19-competition {
-    color: rgb(139, 33, 215);
 }
 .twenty-19-competition{
     color: #1B263B;
@@ -349,17 +328,26 @@ main{
     transform: translateY(-20px);
     transition: opacity 0.6s ease, transform 0.6s ease;
 }
-
 .popup.visible {
     display: block;
     opacity: 1;
     transform: translateY(0);
 }
-
+.info_button{
+    width: 130px;
+    height: 35px;
+    border-radius: 10px;
+    border: 2px solid black;
+    background-color: #90EE90;
+    cursor: pointer;
+}
 
 @media (max-width: 1200px) {
     .member-info_block{
         width: 600px;
+    }
+    .member1_profile{
+        border-radius: 20px;
     }
 }
 @media (max-width: 1150px) {
@@ -404,6 +392,9 @@ main{
         margin-top: -15px;
         font-size: 24px;
         padding: 20px;
+    }
+    .competition_photos{
+        flex-direction: column;
     }
 }
 @media (max-width: 900px) {

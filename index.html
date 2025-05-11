@@ -47,7 +47,7 @@
                 <li class="special_student_2">
                     <p class="special_student-p"><span class="text-members_purple__color">Участие в конкурсах:</span></p>
                     <li class="special_student_results">
-                        <a class="special_student-p__purple" href="https://slobkoll.ru/news/239/66/student-kolledzha-uchastnik-III-regionalnogo-chempionata-World-Skills-molodye-professionaly/" target="_blank"><span style="color: #1B263B;" class="twenty-19-competition">4 место</span> по компетенции "Программные решения для бизнеса", г.Вятские Поляны (первый участник)</a>
+                        <p class="special_student-p"><span style="color: #1B263B;" class="twenty-19-competition">4 место</span> по компетенции "Программные решения для бизнеса", г.Вятские Поляны (первый участник) <button class="info_button"><a style="font-size: 16px;" class="special_student-p" href="https://slobkoll.ru/news/239/66/student-kolledzha-uchastnik-III-regionalnogo-chempionata-World-Skills-molodye-professionaly/" target="_blank">Подробнее</a></button></p>
                     </li>
                     <div class="competition_photos">
                         <img class="competition_photo" src="members_photos/DSC03333 (1024x682).jpg" alt="" onclick="openPopup(this.src)">
@@ -57,7 +57,7 @@
                         </div>
                     </div>
                     <li class="special_student_results">
-                        <a class="special_student-p__purple" href="https://slobkoll.ru/news/347/66/otborochnyj-chempionat-molodye-professionaly/" target="_blank"><span class="twenty-19-competition"><span class="silver_color">2 место </span> по компетенции «Программные решения для бизнеса»,<br>WorldSkills Russia, СКПиСО (2018г)</span></a>
+                        <p class="special_student-p"><span class="twenty-19-competition"><span class="silver_color">2 место </span> по компетенции «Программные решения для бизнеса»,<br>WorldSkills Russia, СКПиСО (2018г) </span><button class="info_button"><a style="font-size: 16px;" class="special_student-p" href="https://slobkoll.ru/news/347/66/otborochnyj-chempionat-molodye-professionaly/" target="_blank">Подробнее</a></button></p>
                     </li>
                     <div class="competition_photos">
                         <img class="competition_photo" src="members_photos/SAM_8352.jpeg" alt="" onclick="openPopup(this.src)">
@@ -88,10 +88,10 @@
                 <li class="special_student_2">
                     <p class="special_student-p"><span class="text-members_purple__color">Участие в конкурсах:</span></p>
                     <li class="special_student_results">
-                        <a class="special_student-p__purple" href="https://slobkoll.ru/news/347/66/otborochnyj-chempionat-molodye-professionaly/" target="_blank"><span class="twenty-19-competition"><span class="brown_color">3 место </span> по компетенции «Программные решения для бизнеса»,<br>WorldSkills Russia, СКПиСО (2018г)</span></a>
+                        <p class="special_student-p"><span class="twenty-19-competition"><span class="brown_color">3 место </span> по компетенции «Программные решения для бизнеса»,<br>WorldSkills Russia, СКПиСО (2018г) </span><button class="info_button"><a style="font-size: 16px;" class="special_student-p" href="https://slobkoll.ru/news/347/66/otborochnyj-chempionat-molodye-professionaly/" target="_blank">Подробнее</a></button></p>
                     </li>
                     <li class="special_student_results">
-                        <a class="special_student-p__purple" href="https://www.vpmt.ru/node/11622?ysclid=m3nhp5klre516209245" target="_blank"><span class="twenty-19-competition"><span class="brown_color">3 место </span> по компетенции «Программные решения для бизнеса»,<br>г.Вятские Поляны (2019г)</span></a>
+                        <p class="special_student-p"><span class="twenty-19-competition"><span class="brown_color">3 место </span> по компетенции «Программные решения для бизнеса»,<br>г.Вятские Поляны (2019г) </span><button class="info_button"><a style="font-size: 16px;" class="special_student-p" href="https://www.vpmt.ru/node/11622?ysclid=m3nhp5klre516209245" target="_blank">Подробнее</a></button></p>
                     </li>
                     <div class="competition_photos">
                         <img class="competition_photo" src="members_photos/cheglakov.jpg" alt="" onclick="openPopup(this.src)">
@@ -205,6 +205,7 @@
         popup.style.display = 'flex';
         popup.classList.add('visible');
     }
+
     function closePopup() {
         const popup = document.getElementById('popup')
         popup.classList.remove('visible');
@@ -212,10 +213,42 @@
             popup.style.display = 'none';
         }, 500);
     }
+
     document.addEventListener('keydown', function(event) {
-            if (event.key = 'Escape') {
-                closePopup();
-            }
+        if (event.key === 'Escape') {
+            closePopup();
+        }
     });
+    let closePopupHandler;
+
+    function enableMobileClose() {
+        const popup = document.getElementById("popup");
+        if (popup && !closePopupHandler) {
+            closePopupHandler = closePopup;
+            popup.addEventListener('click', closePopupHandler);
+        }
+    }
+
+    function disableMobileClose() {
+        const popup = document.getElementById("popup");
+        if (popup && closePopupHandler) {
+            popup.removeEventListener('click', closePopupHandler);
+            closePopupHandler = null;
+        }
+    }
+
+    function changeTextBasedOnScreenWidth() {
+        if (window.innerWidth < 900) {
+            disableMobileClose();
+        } else {
+            enableMobileClose();
+        }
+    }
+
+    window.onload = function() {
+        changeTextBasedOnScreenWidth();
+    };
+
+    window.onresize = changeTextBasedOnScreenWidth;
 </script>
 </body>
