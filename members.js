@@ -3,12 +3,13 @@ const members_section = document.getElementById('members');
 let members = [
     {
         element: document.createElement('div'),
-        title: 'Радыгин Алексей',
+        title: 'Радыгин Евгений',
         speciality: '09.02.03 Программирование в компьютерных системах',
         href: 'https://aviakat.ru/downloads/rumo/olimp/o_ved.pdf',
         photo_href: [],
         experting: 'А.А.Махнёв',
-        competition_results: ['<span class="silver_color">2 место</span> во Всероссийской олимпиаде профессионального мастерства 2019 год '],
+        competition_results: ['Всероссийская олимпиада профессионального мастерства — <span class="silver_color">2 место </span>'],
+        student_results_year: ['<p class="special_student-p_year">2019 год</p>']
         // bb_year: 'Год выпуска:'
     },
     {
@@ -18,7 +19,8 @@ let members = [
         href: 'https://vk.com/wall-24316094_3275?ysclid=m3ninxj0vo565605635',
         photo_href: ['members_photos/sedov.jpg'],
         experting: 'А.А.Махнёв',
-        competition_results: ['<span class="brown_color">3 место</span> по компетенции "Программные решения для бизнеса", г.Вятские Поляны – февраль 2021 год ']
+        competition_results: ['<span class="text-members_purple__color">Компетенция:</span> "Программные решения для бизнеса", г.Вятские Поляны — <span class="brown_color">3 место </span>'],
+        student_results_year: ['<p class="special_student-p_year">2021 год</p>']
     },
     {
         element: document.createElement('div'),
@@ -27,7 +29,8 @@ let members = [
         href: 'https://www.vpmt.ru/node/11793?ysclid=m3nhgcz1th593378480',
         photo_href: ['members_photos/chernih.jpg'],
         experting: '',
-        competition_results: ['<span class="brown_color">3 место</span> по компетенции "Программные решения для бизнеса", г.Вятские Поляны – февраль 2020 год ']
+        competition_results: ['<span class="text-members_purple__color">Компетенция:</span> "Программные решения для бизнеса", г.Вятские Поляны — <span class="brown_color">3 место </span>'],
+        student_results_year: ['<p class="special_student-p_year">2020 год</p>']
     },
     {
         element: document.createElement('div'),
@@ -36,7 +39,8 @@ let members = [
         href: 'https://www.vpmt.ru/node/11793?ysclid=m3nhgcz1th593378480',
         photo_href: ['members_photos/ekimova.jpg'],
         experting: '',
-        competition_results: ['<span class="gold_color">1 место</span> по компетенции «ИТ-решения для бизнеса на платформе «1С:Предприятие 8»» – февраль 2020 год ']
+        competition_results: ['<span class="text-members_purple__color">Компетенция:</span> «ИТ-решения для бизнеса на платформе «1С:Предприятие 8» — <span class="gold_color">1 место </span>'],
+        student_results_year: ['<p class="special_student-p_year">2020 год</p>']
     },
     {
         element: document.createElement('div'),
@@ -45,7 +49,8 @@ let members = [
         href: 'https://vk.com/wall-24316094_3275?ysclid=m3ninxj0vo565605635',
         photo_href: ['members_photos/poroshina.jpg', 'members_photos/poroshina2.jpg'],
         experting: 'А.С.Бобров',
-        competition_results: ['<span class="brown_color">3 место</span> по компетенции "ИТ-решения для бизнеса на платформе 1С", г.Вятские Поляны – февраль 2021 год ']
+        competition_results: ['Компетенция "ИТ-решения для бизнеса на платформе 1С", г.Вятские Поляны — <span class="brown_color">3 место </span>'],
+        student_results_year: ['<p class="special_student-p_year">2021 год</p>']
     },
     {
         element: document.createElement('div'),
@@ -54,7 +59,8 @@ let members = [
         href: 'https://www.vpmt.ru/node/11622?ysclid=m3nhp5klre516209245',
         photo_href: ['members_photos/bobrov.jpg'],
         experting: '',
-        competition_results: ['Медальон «За профессионализм» по компетенции «ИТ - решения для бизнеса на платформе "1С: Предприятие 8"», г.Вятские Поляны – февраль 2019 год ']
+        competition_results: ['<span class="text-members_purple__color">Компетенция:</span> решения для бизнеса на платформе "1С: Предприятие 8"» г.Вятские Поляны, Медальон «За профессионализм» по компетенции «ИТ'],
+        student_results_year: ['<p class="special_student-p_year">2019 год</p>']
     },
     {
         element: document.createElement('div'),
@@ -63,18 +69,19 @@ let members = [
         href: 'https://vk.com/wall-24316094_4370?ysclid=m3v9uf465f986520444',
         photo_href: [],
         experting: 'А.А.Махнёв',
-        competition_results: ['<span class="gold_color">1 место</span> по компетенции "Программные решения для бизнеса", г.Вятские Поляны – февраль 2022 год ']
+        competition_results: ['<span class="text-members_purple__color">Компетенция:</span> "Программные решения для бизнеса", г.Вятские Поляны — <span class="gold_color">1 место </span>'],
+        student_results_year: ['<p class="special_student-p_year">2022 год</p>']
     },
     {
         element: document.createElement('div'),
         title: 'Калинин Арсений',
         speciality: '09.02.07 Информационные системы и программирование',
-        href: 'https://vk.com/wall-24316094_4370?ysclid=m3v9uf465f986520444',
-        // 2 место - https://vk.com/wall-24316094_6450?ysclid=m3v9ssfyj6720591635
+        href: ['https://vk.com/wall-24316094_4370?ysclid=m3v9uf465f986520444',
+        '2 место - https://vk.com/wall-24316094_6450?ysclid=m3v9ssfyj6720591635'],
         photo_href: [],
-        experting: 'С.Т.Выдрина',
-        competition_results: ['<span class="brown_color">3 место</span> по компетенции "ИТ-решения для бизнеса на платформе 1С", г.Вятские Поляны – февраль 2022 год ']
-        // competition_results2: '<span class="silver_color">2 место</span>, по компетенции «Разработка мобильных приложений», г.Киров –март 2023'
+        experting: 'С.Т.Выдрин',
+        competition_results: ['<span class="text-members_purple__color">Компетенция:</span> "ИТ-решения для бизнеса на платформе 1С", г.Вятские Поляны — <span class="brown_color">3 место </span>', '<span class="text-members_purple__color">Компетенция:</span> «Разработка мобильных приложений» <span class="silver_color">2 место</span>, г.Киров'],
+        student_results_year: ['<p class="special_student-p_year">2022 год</p>']
     },
     {
         element: document.createElement('div'),
@@ -83,7 +90,8 @@ let members = [
         href: 'https://www.vpmt.ru/node/12337?ysclid=m3ni15wj17202705121',
         photo_href: ['members_photos/hamidullin.jpeg'],
         experting: '',
-        competition_results: [`<span class="gold_color">1 место</span> по компетенции "Программные решения для бизнеса", г.Вятские Поляны – март 2023 год `]
+        competition_results: [`<span class="text-members_purple__color">Компетенция:</span> "Программные решения для бизнеса", г.Вятские Поляны — <span class="gold_color">1 место </span>`],
+        student_results_year: ['<p class="special_student-p_year">2023 год</p>']
     },
     {
         element: document.createElement('div'),
@@ -92,14 +100,16 @@ let members = [
         href: 'https://slobkoll.ru/news/1013/66/regionalnyj-etap-chempionata-po-professionalnomu-masterstvu-professionaly/',
         photo_href: [],
         experting: 'А.А.Махнёв',
-        competition_results: ['<span class="gold_color">1 место</span> по компетенции "Программные решения для бизнеса", г.Вятские Поляны – март 2024 год ']
+        competition_results: ['<span class="text-members_purple__color">Компетенция:</span> "Программные решения для бизнеса", г.Вятские Поляны — <span class="gold_color">1 место </span>'],
+        student_results_year: ['<p class="special_student-p_year">2024 год</p>']
     },
     {
         element: document.createElement('div'),
         title: 'Выдрин Семён',
-        href: '',
+        href: 'https://slobkoll.ru/uploads/masterskie/uch22.pdf',
         photo_href: [],
-        competition_results: ['Эксперт чемпионата по компетенции «ИТ-решения для бизнеса на платформе «1С:Предприятие 8», г.Вятские Поляны – февраль 2022, март 2023 год '],
+        competition_results: ['<span class="text-members_purple__color">Компетенция:</span> «ИТ-решения для бизнеса на платформе «1С:Предприятие 8» г.Вятские Поляны, эксперт чемпионата'],
+        student_results_year: ['<p class="special_student-p_year">2022 / 23 год</p>'],
         experting: ''
     },
     {
@@ -109,8 +119,9 @@ let members = [
         href: 'https://slobkoll.ru/news/1013/66/regionalnyj-etap-chempionata-po-professionalnomu-masterstvu-professionaly/',
         photo_href: [],
         experting: 'Н.С.Пентин',
-        competition_results: ['<span class="brown_color">3 место</span>  по компетенции "Программные решения для бизнеса", г.Вятские Поляны – март 2024 год','<br>', 
-        'участник по компетенции "Программные решения для бизнеса", г.Вятские Поляны – март 2023 год ']
+        competition_results: ['<span class="text-members_purple__color">Компетенция:</span> "Программные решения для бизнеса", г.Вятские Поляны — <span class="brown_color">3 место </span>', 
+        '<span class="text-members_purple__color">Компетенция:</span> "Программные решения для бизнеса", г.Вятские Поляны, участник '],
+        student_results_year: ['<p class="special_student-p_year">2023 год</p>'],
     },
 ];
 document.addEventListener('DOMContentLoaded', function() {
@@ -155,22 +166,27 @@ document.addEventListener('DOMContentLoaded', function() {
 
         const special_student_p3 = document.createElement('p');
         special_student_p3.className = 'special_student-p';
-        special_student_p3.innerHTML = `<a class="text-members_purple__color">Эксперт: </a><a>${member.experting}</a>`;
+        special_student_p3.innerHTML = `<a class="text-members_purple__color">Наставник: </a><a>${member.experting}</a>`;
+
+        const special_student_results_year = document.createElement('li');
+        special_student_results_year.className = 'special_student_results_year';
+        special_student_results_year.innerHTML = member.student_results_year;
 
         const info_button = document.createElement('button');
         info_button.className = 'info_button'
         info_button.innerHTML = `<a style="font-size: 16px;" class="special_student-p" href="${member.href}" target="_blank">Подробнее</a>`
 
-        const special_student_results = document.createElement('li');
-        special_student_results.className = 'special_student_results';
-
+        const special_student_results = document.createElement('ul');
         member.competition_results.forEach((item) => {
+            const special_student_results2 = document.createElement('li');
+            special_student_results2.className = 'special_student_results';
             const special_student_p = document.createElement('p');
             special_student_p.className = 'special_student-p';
             const twenty_competition = document.createElement('span');
             twenty_competition.innerHTML = item;
             special_student_p.append(twenty_competition, info_button);
-            special_student_results.appendChild(special_student_p);
+            special_student_results2.append(special_student_p);
+            special_student_results.appendChild(special_student_results2)
         });
 
         // Блок кода для competition_photo
@@ -206,8 +222,8 @@ document.addEventListener('DOMContentLoaded', function() {
         expert.appendChild(special_student_p3);
         competition.append(special_student_p2);
         speciality.appendChild(special_student_p1);
-        membersInfo.append(speciality, competition, special_student_results, expert);
-        (member.photo_href.length != 0) ? membersInfo.append(speciality, competition, special_student_results, competitionPhotosDiv, expert) : membersInfo.append(speciality, competition, special_student_results, expert);
+        // membersInfo.append(speciality, competition, special_student_results, special_student_results_year, expert, );
+        (member.photo_href.length != 0) ? membersInfo.append(speciality, competition, special_student_results_year, special_student_results, competitionPhotosDiv, expert) : membersInfo.append(speciality, competition, special_student_results_year, special_student_results, expert);
         
         
         // ^ - expert
@@ -218,17 +234,6 @@ document.addEventListener('DOMContentLoaded', function() {
         members_section.append(member.element);
     });
 });
-
-// const competition_photos = document.createElement('div');
-// competition_photos.className = 'competition_photos';
-// const popup_photos = document.createElement('div');
-// popup_photos.className = 'popup';
-// const popup_img = document.createElement('img');
-// popup_img.className = 'competition_photo';
-// const popup_img_js = document.createElement('img');
-// popup_img_js.id = 'popup-img';
-// popup_photos.appendChild(popup_img_js);
-
 // function on basedScreenWidth
 function changeTextBasedOnScreenWidth() {
     const name_of_place_competition = document.querySelectorAll('.name_of_place-competition');

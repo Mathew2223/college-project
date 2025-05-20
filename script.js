@@ -5,6 +5,7 @@ const circleRight = document.getElementById('circle-right');
 const menu = document.querySelector('#menu');
 
 membersSwitch.addEventListener('click', () => {
+    document.getElementById('eighteen-year').classList.remove('active');
     document.getElementById('nineteen-year').classList.remove('active');
     document.getElementById('twenty-year').classList.remove('active');
     document.getElementById('first-year').classList.remove('active');
@@ -12,6 +13,7 @@ membersSwitch.addEventListener('click', () => {
     document.getElementById('third-year').classList.remove('active');
     document.getElementById('fourth-year').classList.remove('active');
 
+    document.getElementById('eighteen-year').style.display = 'none';
     document.getElementById('nineteen-art').style.display = 'none';
     document.getElementById('twenty-art').style.display = 'none';
     document.getElementById('first-art').style.display = 'none';

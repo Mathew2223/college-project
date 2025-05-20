@@ -213,17 +213,42 @@ main{
     content: "✔"; 
     font-size: 24px;
     margin-right: 5px;
+    margin-left: 100px;
+    margin-top: 2px;
+}
+.special_student_results_year{
+    display: $flexbox__display-flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 5px;
+}
+.special_student_results_year::before{
+    content: "⌛"; 
+    font-size: 22px;
+    margin-right: 5px;
     margin-left: 50px;
 }
 .special_student-p{
     font-family: $font-Montserrat;
-    font-size: 18px;
+    font-size: 19px;
     font-weight: 600;
     line-height: 29px;
     letter-spacing: $letter-spacing_text;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
     color: $almost-black-color-p;
+    text-decoration: none;
+    margin-top: 2px;
+}
+.special_student-p_year{
+    font-family: $font-Montserrat;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: $letter-spacing_text;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: mediumslateblue;;
     text-decoration: none;
 }
 .twenty-19-competition{
@@ -295,12 +320,13 @@ main{
     flex-direction: row;
     gap: 50px;
     padding: 10px 0;
-    margin-left: 100px;
+    margin-left: 145px;
 }
 .competition_photo{
     border-radius: 10px;
-    width: 240px;
+    width: auto;
     height: 160px;
+    cursor: pointer;
 }
 .popup {
     display: none;
@@ -395,6 +421,7 @@ main{
     }
     .competition_photos{
         flex-direction: column;
+        max-width: 300px;
     }
 }
 @media (max-width: 900px) {
