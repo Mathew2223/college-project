@@ -302,8 +302,8 @@ main {
 }
 
 .person_img {
+  height: 250px;
   width: 280px;
-  max-height: 260px;
   margin-bottom: 40px;
 }
 

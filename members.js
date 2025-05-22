@@ -15,7 +15,7 @@ let members = [
         `],
         student_results_year: ['<p class="special_student-p_year">2019 год</p>'],       
         profile_img: 'radigin.png',
-        styles: 'margin-left: 25px; height: 260px;'
+        styles: 'margin-left: 25px; height: 250px;'
         // bb_year: 'Год выпуска:'
     },
     {
@@ -77,7 +77,8 @@ let members = [
             <span class="text-members_hex_purple__color">Результат: </span><span class="twenty-19-competition"><span class="brown_color">3 место </span></span> <br>
         `],
         student_results_year: ['<p class="special_student-p_year">2021 год</p>'],
-        profile_img: 'sedov_.png'
+        profile_img: 'sedov_.png',
+        styles: 'height: 250px;'
     },
     {
         element: document.createElement('div'),
@@ -93,7 +94,7 @@ let members = [
         `],
         student_results_year: ['<p class="special_student-p_year">2021 год</p>'],       
         profile_img: 'poroshina.png',
-        styles: 'margin-left: 35px'
+        styles: 'margin-left: 35px; height: 250px;'
     },
     {
         element: document.createElement('div'),
