@@ -32,7 +32,7 @@ html {
     cursor: default;
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 99;
     @include flex();
 }
 main{
@@ -268,7 +268,8 @@ main{
 }
 .person_img{
     width: 280px;
-    height: 280px;
+    max-height: 260px;
+    margin-bottom: 40px;
 }
 // buttom photo line
 .seperator-wrapper {
@@ -369,6 +370,12 @@ main{
     border: 2px solid black;
     background-color: #90EE90;
     cursor: pointer;
+}
+
+.footer{
+    height: 100%;
+    padding-bottom: 50px;
+    background-color: #121212;
 }
 
 @media (max-width: 1200px) {

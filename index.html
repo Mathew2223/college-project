@@ -12,6 +12,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&family=Allura&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="favicon-32x32.png" type="image/x-icon">
 </head>
 <body>
 <header class="header">
@@ -19,7 +21,7 @@
         <h1 class="name h1">Участники конкурсов профессионального мастерства в Слободском колледже</h1>
     </div>
 </header>
-<main>
+<main style="padding-bottom: 50px;">
     <nav class="nav-scroll">
         <div class="members-switch-block">
             <h2 class="members-switch-text">Участники</h2>
@@ -27,14 +29,14 @@
               <div class="members-switch-circle-left" id="circle-left"></div>
               <div class="members-switch-circle-right" id="circle-right"></div>
             </div>
-            <h2 id="result-members-compet_text" class="members-switch-text">Компетенции</h2>
+            <h2 id="result-members-compet_text" class="members-switch-text">Результаты</h2>
         </div>
     </nav>
     <section class="members" id="members">
         <!-- member 1 -->
         <div class="member-info_block">
             <div class="member1_profile" id="member1_profile">
-                <img class="person_img" id="person_img1" src="person.png" alt="member 1">
+                <img class="person_img" style="width: 220px; margin-left: 10px;" id="person_img1" src="lapihin_.png" alt="member 1">
                 <section class="seperator-wrapper">
                     <div class="seperator gradient"></div>
                 </section>
@@ -86,7 +88,7 @@
         <!-- member 2 -->
         <div class="member-info_block">
             <div class="member1_profile" id="member2_profile">
-                <img class="person_img" id="person_img2" src="person.png" alt="member 1">
+                <img class="person_img" id="person_img2" src="cheglakov.png" alt="member 1">
                 <section class="seperator-wrapper">
                     <div class="seperator gradient"></div>
                 </section>
@@ -119,7 +121,7 @@
                         </li>
                     </li>
                     <div class="competition_photos">
-                        <img class="competition_photo" src="members_photos/cheglakov.jpg" alt="" onclick="openPopup(this.src)">
+                        <!-- <img class="competition_photo" src="members_photos/cheglakov.jpg" alt="" onclick="openPopup(this.src)"> -->
                         <div class="popup" id="popup" onclick="closePopup()">
                             <img id="popup-img" src="" alt="">
                         </div>
@@ -147,83 +149,459 @@
             <button id="third-year" class="years-twentys"><p class="p-years">2023</p></button>
             <button id="fourth-year" class="years-twentys"><p class="p-years">2024</p></button>
         </nav>
-    </section>
+        <!-- <div id="eighteen-art" class="years-results">
+                <div>
     
-    <!-- <section class="eighteen-year__section">
-        <div id="eighteen-art" class="years-results"> -->
-        <section class="nineteen-year__section">
+                </div>
+            </div> -->
+        <section id="nineteen-year__section" class="nineteen-year__section">
             <div id="nineteen-art" class="years-results">
-            <div class="block-winners__div">
-                <h2 class="years-hyper_paragraph">«Программные решения для бизнеса»</h2>               
-                <div class="block-winners">
-                <ul class="buisness_blocks">
-                    <li class="buisness_block">
-                        <div class="photo-place__block">
-                            <img src="person_2.png" alt="">
-                            <div style="background-color: gold;" class="circle"></div>
-                        </div>
-                        <div class="about_member-resulting">
-                            <p class="name_of_members-competition">Радыгин Евгений</p>
-                            <p class="name_of_place-competition">Слободской государственный колледж педагогики и социальных отношений</p>
-                        </div>
-                    </li>
-                    <li class="buisness_block">
-                        <div class="photo-place__block">
-                            <img src="person_2.png" alt="">
-                            <div style="background-color: silver;" class="circle"></div>
-                        </div>
-                        <div class="about_member-resulting">
-                            <p class="name_of_members-competition">Лапихин Алексей</p>
-                            <p class="name_of_place-competition">Слободской государственный колледж педагогики и социальных отношений</p>
-                        </div>
-                    </li>
-                    <li class="buisness_block" id="third-block">
-                        <div class="photo-place__block">
-                            <img src="person_2.png" alt="">
-                            <div style="background-color: rgb(153, 104, 40);" class="circle"></div>
-                        </div>
-                        <div class="about_member-resulting">
-                            <p class="name_of_members-competition">Чеглаков Алексей</p>
-                            <p class="name_of_place-competition">Слободской государственный колледж педагогики и социальных отношений</p>
-                        </div>
-                    </li>
-                </ul>
+                <div class="block-winners__div">
+                    <h2 class="years-hyper_paragraph">«Программные решения для бизнеса»</h2>     
+                    <h3 style="padding-top: 15px; color: mediumslateblue;" class="years-hyper_paragraph">г. Вятские Поляны</h2>           
+                    <div class="block-winners">
+                    <ul class="buisness_blocks">
+                        <li class="buisness_block">
+                            <div class="photo-place__block">
+                                <img src="person_2.png" alt="">
+                                <div style="background-color: gold;" class="circle"></div>
+                            </div>
+                            <div class="about_member-resulting">
+                                <p class="name_of_members-competition">Гарифов Роберт</p>
+                                <p class="name_of_place-competition">Вятско-Полянский механический техникум</p>
+                            </div>
+                        </li>
+                        <li class="buisness_block">
+                            <div class="photo-place__block">
+                                <img src="person_2.png" alt="">
+                                <div style="background-color: silver;" class="circle"></div>
+                            </div>
+                            <div class="about_member-resulting">
+                                <p class="name_of_members-competition">Черепанов Сергей</p>
+                                <p class="name_of_place-competition">Кировский авиационный техникум</p>
+                            </div>
+                        </li>
+                        <li class="buisness_block" id="third-block">
+                            <div class="photo-place__block">
+                                <img src="person_2.png" alt="">
+                                <div style="background-color: rgb(153, 104, 40);" class="circle"></div>
+                            </div>
+                            <div class="about_member-resulting">
+                                <p class="name_of_members-competition">Чеглаков Алексей</p>
+                                <p class="name_of_place-competition">Слободской государственный колледж педагогики и социальных отношений</p>
+                            </div>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+                <div class="block-winners__div">
+                    <h2 class="years-hyper_paragraph">«Всероссийская олимпиада профессионального мастерства»</h2>     
+                    <h3 style="padding-top: 15px; color: mediumslateblue;" class="years-hyper_paragraph">г. Киров</h2>           
+                    <div class="block-winners">
+                    <ul class="buisness_blocks">
+                        <li class="buisness_block">
+                            <div class="photo-place__block">
+                                <img src="person_2.png" alt="">
+                                <div style="background-color: gold;" class="circle"></div>
+                            </div>
+                            <div class="about_member-resulting">
+                                <p class="name_of_members-competition">Басыров Михаил</p>
+                                <p class="name_of_place-competition">Омутнинский колледж</p>
+                            </div>
+                        </li>
+                        <li class="buisness_block">
+                            <div class="photo-place__block">
+                                <img src="person_2.png" alt="">
+                                <div style="background-color: silver;" class="circle"></div>
+                            </div>
+                            <div class="about_member-resulting">
+                                <p class="name_of_members-competition">Радыгин Евгений</p>
+                                <p class="name_of_place-competition">Кировский авиационный техникум</p>
+                            </div>
+                        </li>
+                        <li class="buisness_block" id="third-block">
+                            <div class="photo-place__block">
+                                <img src="person_2.png" alt="">
+                                <div style="background-color: rgb(153, 104, 40);" class="circle"></div>
+                            </div>
+                            <div class="about_member-resulting">
+                                <p class="name_of_members-competition">Харин Дмитрий</p>
+                                <p class="name_of_place-competition">Омутнинский колледж</p>
+                            </div>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+                <div class="block-winners__div">
+                    <h2 class="years-hyper_paragraph">«Программные решения для бизнеса на платформе 1С:Предприятие 8»</h2>     
+                    <h3 style="padding-top: 15px; color: mediumslateblue;" class="years-hyper_paragraph">г. Вятские Поляны</h2>           
+                    <div class="block-winners">
+                    <ul class="buisness_blocks">
+                        <li class="buisness_block">
+                            <div class="photo-place__block">
+                                <img src="person_2.png" alt="">
+                                <div style="background-color: gold;" class="circle"></div>
+                            </div>
+                            <div class="about_member-resulting">
+                                <p class="name_of_members-competition">Шушпанов Никита</p>
+                                <p class="name_of_place-competition">Вятско-Полянский механический техникум</p>
+                            </div>
+                        </li>
+                        <li class="buisness_block">
+                            <div class="photo-place__block">
+                                <img src="person_2.png" alt="">
+                                <div style="background-color: silver;" class="circle"></div>
+                            </div>
+                            <div class="about_member-resulting">
+                                <p class="name_of_members-competition">Панихин Александр</p>
+                                <p class="name_of_place-competition">Яранский технологический техникум</p>
+                            </div>
+                        </li>
+                        <li class="buisness_block" id="third-block">
+                            <div class="photo-place__block">
+                                <img src="person_2.png" alt="">
+                                <div style="background-color: rgb(153, 104, 40);" class="circle"></div>
+                            </div>
+                            <div class="about_member-resulting">
+                                <p class="name_of_members-competition">Малышев Дмитрий</p>
+                                <p class="name_of_place-competition">Омутнинский колледж педагогики, экономики и права</p>
+                            </div>
+                        </li>
+                    </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div id="eighteen-art" class="years-results">
-            <div>
-
+        </section>
+        <section id="twenty-year__section" class="nineteen-year__section" style="margin-top: -20px;">
+            <div id="twenty-art" class="years-results">
+                <div class="block-winners__div">
+                    <h2 class="years-hyper_paragraph">«Программные решения для бизнеса»</h2>     
+                    <h3 style="padding-top: 15px; color: mediumslateblue;" class="years-hyper_paragraph">г. Вятские Поляны</h2>           
+                    <div class="block-winners">
+                    <ul class="buisness_blocks">
+                        <li class="buisness_block">
+                            <div class="photo-place__block">
+                                <img src="person_2.png" alt="">
+                                <div style="background-color: gold;" class="circle"></div>
+                            </div>
+                            <div class="about_member-resulting">
+                                <p class="name_of_members-competition">Крохин Кирилл</p>
+                                <p class="name_of_place-competition">Вятско-Полянский механический техникум</p>
+                            </div>
+                        </li>
+                        <li class="buisness_block">
+                            <div class="photo-place__block">
+                                <img src="person_2.png" alt="">
+                                <div style="background-color: silver;" class="circle"></div>
+                            </div>
+                            <div class="about_member-resulting">
+                                <p class="name_of_members-competition">Ветошкин Виталий</p>
+                                <p class="name_of_place-competition">Кировский авиационный техникум</p>
+                            </div>
+                        </li>
+                        <li class="buisness_block" id="third-block">
+                            <div class="photo-place__block">
+                                <img src="person_2.png" alt="">
+                                <div style="background-color: rgb(153, 104, 40);" class="circle"></div>
+                            </div>
+                            <div class="about_member-resulting">
+                                <p class="name_of_members-competition">Черных Александр</p>
+                                <p class="name_of_place-competition">Слободской колледж педагогики и социальных отношений</p>
+                            </div>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+                <div class="block-winners__div">
+                    <h2 class="years-hyper_paragraph">«ИТ-решения для бизнеса на платформе 1С:Предприятие 8»</h2>     
+                    <h3 style="padding-top: 15px; color: mediumslateblue;" class="years-hyper_paragraph">г. Вятские Поляны</h2>           
+                    <div class="block-winners">
+                    <ul class="buisness_blocks">
+                        <li class="buisness_block">
+                            <div class="photo-place__block">
+                                <img src="person_2.png" alt="">
+                                <div style="background-color: gold;" class="circle"></div>
+                            </div>
+                            <div class="about_member-resulting">
+                                <p class="name_of_members-competition">Екимова Наталья</p>
+                                <p class="name_of_place-competition">Слободской колледж педагогики и социальных отношений</p>
+                            </div>
+                        </li>
+                        <li class="buisness_block">
+                            <div class="photo-place__block">
+                                <img src="person_2.png" alt="">
+                                <div style="background-color: silver;" class="circle"></div>
+                            </div>
+                            <div class="about_member-resulting">
+                                <p class="name_of_members-competition">Хисматуллина Альбина</p>
+                                <p class="name_of_place-competition">Вятско-Полянский механический техникум</p>
+                            </div>
+                        </li>
+                        <li class="buisness_block" id="third-block">
+                            <div class="photo-place__block">
+                                <img src="person_2.png" alt="">
+                                <div style="background-color: rgb(153, 104, 40);" class="circle"></div>
+                            </div>
+                            <div class="about_member-resulting">
+                                <p class="name_of_members-competition">Малышев Дмитрий</p>
+                                <p class="name_of_place-competition">Омутнинский колледж педагогики, экономики и права</p>
+                            </div>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div id="twenty-art" class="years-results">
-            <div>
-
+        </section> 
+        <section id="first-year__section" class="nineteen-year__section" style="margin-top: -20px;">
+            <div id="first-art" class="years-results">
+                <div class="block-winners__div">
+                    <h2 class="years-hyper_paragraph">«Программные решения для бизнеса»</h2>     
+                    <h3 style="padding-top: 15px; color: mediumslateblue;" class="years-hyper_paragraph">г. Вятские Поляны</h2>           
+                    <div class="block-winners">
+                    <!-- ! -->
+                    <ul class="buisness_blocks">
+                        <li class="buisness_block">
+                            <div class="photo-place__block">
+                                <img src="person_2.png" alt="">
+                                <div style="background-color: gold;" class="circle"></div>
+                            </div>
+                            <div class="about_member-resulting">
+                                <p class="name_of_members-competition">Давыдов Александр</p>
+                                <p class="name_of_place-competition">Вятско-Полянский механический техникум</p>
+                            </div>
+                        </li>
+                        <li class="buisness_block">
+                            <div class="photo-place__block">
+                                <img src="person_2.png" alt="">
+                                <div style="background-color: silver;" class="circle"></div>
+                            </div>
+                            <div class="about_member-resulting">
+                                <p class="name_of_members-competition">Белоусова Мария</p>
+                                <p class="name_of_place-competition">Колледж ВятГУ</p>
+                            </div>
+                        </li>
+                        <li class="buisness_block" id="third-block">
+                            <div class="photo-place__block">
+                                <img src="person_2.png" alt="">
+                                <div style="background-color: rgb(153, 104, 40);" class="circle"></div>
+                            </div>
+                            <div class="about_member-resulting">
+                                <p class="name_of_members-competition">Седов Алексей</p>
+                                <p class="name_of_place-competition">Слободской колледж педагогики и социальных отношений</p>
+                            </div>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+                <div class="block-winners__div">
+                    <h2 class="years-hyper_paragraph">«ИТ-решения для бизнеса на платформе 1С»</h2>     
+                    <h3 style="padding-top: 15px; color: mediumslateblue;" class="years-hyper_paragraph">г. Вятские Поляны</h2>           
+                    <div class="block-winners">
+                    <ul class="buisness_blocks">
+                    <!-- ! -->
+                        <li class="buisness_block">
+                            <div class="photo-place__block">
+                                <img src="person_2.png" alt="">
+                                <div style="background-color: gold;" class="circle"></div>
+                            </div>
+                            <div class="about_member-resulting">
+                                <p class="name_of_members-competition">Шушпанов Никита</p>
+                                <p class="name_of_place-competition">Вятско-Полянский механический техникум</p>
+                            </div>
+                        </li>
+                        <li class="buisness_block">
+                            <div class="photo-place__block">
+                                <img src="person_2.png" alt="">
+                                <div style="background-color: silver;" class="circle"></div>
+                            </div>
+                            <div class="about_member-resulting">
+                                <p class="name_of_members-competition">Панихин Александр</p>
+                                <p class="name_of_place-competition">Яранский технологический техникум</p>
+                            </div>
+                        </li>
+                        <li class="buisness_block" id="third-block">
+                            <div class="photo-place__block">
+                                <img src="person_2.png" alt="">
+                                <div style="background-color: rgb(153, 104, 40);" class="circle"></div>
+                            </div>
+                            <div class="about_member-resulting">
+                                <p class="name_of_members-competition">Порошина Дарья</p>
+                                <p class="name_of_place-competition">Слободской колледж педагогики и социальных отношений</p>
+                            </div>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div id="first-art" class="years-results">
-            <div>
-
+        </section> 
+        <section id="second-year__section" class="nineteen-year__section" style="margin-top: -20px;">
+            <div id="second-art" class="years-results">
+                <div class="block-winners__div">
+                    <h2 class="years-hyper_paragraph">«Разработка мобильных приложений»</h2>     
+                    <h3 style="padding-top: 15px; color: mediumslateblue;" class="years-hyper_paragraph">г. Киров</h2>           
+                    <div class="block-winners">
+                    <ul class="buisness_blocks">
+                        <li class="buisness_block">
+                            <div class="photo-place__block">
+                                <img src="person_2.png" alt="">
+                                <div style="background-color: gold;" class="circle"></div>
+                            </div>
+                            <div class="about_member-resulting">
+                                <p class="name_of_members-competition">Кочуров Михаил</p>
+                                <p class="name_of_place-competition"></p>
+                            </div>
+                        </li>
+                        <li class="buisness_block">
+                            <div class="photo-place__block">
+                                <img src="person_2.png" alt="">
+                                <div style="background-color: silver;" class="circle"></div>
+                            </div>
+                            <div class="about_member-resulting">
+                                <p class="name_of_members-competition">Мохов Иван</p>
+                                <p class="name_of_place-competition"></p>
+                            </div>
+                        </li>
+                        <li class="buisness_block" id="third-block">
+                            <div class="photo-place__block">
+                                <img src="person_2.png" alt="">
+                                <div style="background-color: rgb(153, 104, 40);" class="circle"></div>
+                            </div>
+                            <div class="about_member-resulting">
+                                <p class="name_of_members-competition">Калинин Арсений</p>
+                                <p class="name_of_place-competition">Слободской колледж педагогики и социальных отношений</p>
+                            </div>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div id="second-art" class="years-results">
-            <div>
-
+        </section> 
+        <section id="third-year__section" class="nineteen-year__section" style="margin-top: -20px;">
+            <div id="third-art" class="years-results">
+                <div class="block-winners__div">
+                    <h2 class="years-hyper_paragraph">«Программные решения для бизнеса»</h2>     
+                    <h3 style="padding-top: 15px; color: mediumslateblue;" class="years-hyper_paragraph">г.Вятские Поляны</h2>           
+                    <div class="block-winners">
+                    <ul class="buisness_blocks">
+                        <li class="buisness_block">
+                            <div class="photo-place__block">
+                                <img src="person_2.png" alt="">
+                                <div style="background-color: gold;" class="circle"></div>
+                            </div>
+                            <div class="about_member-resulting">
+                                <p class="name_of_members-competition">Хамидуллин Айрат</p>
+                                <p class="name_of_place-competition">Слободской колледж педагогики и социальных отношений</p>
+                            </div>
+                        </li>
+                        <li class="buisness_block">
+                            <div class="photo-place__block">
+                                <img src="person_2.png" alt="">
+                                <div style="background-color: silver;" class="circle"></div>
+                            </div>
+                            <div class="about_member-resulting">
+                                <p class="name_of_members-competition">Шумилов Александр</p>
+                                <p class="name_of_place-competition">Вятско-Полянский механический техникум</p>
+                            </div>
+                        </li>
+                        <li class="buisness_block" id="third-block">
+                            <div class="photo-place__block">
+                                <img src="person_2.png" alt="">
+                                <div style="background-color: rgb(153, 104, 40);" class="circle"></div>
+                            </div>
+                            <div class="about_member-resulting">
+                                <p class="name_of_members-competition">Богомолов Глеб</p>
+                                <p class="name_of_place-competition">Вятско-Полянский механический техникум</p>
+                            </div>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+                <div class="block-winners__div">
+                    <h2 class="years-hyper_paragraph">«Программные решения для бизнеса»</h2>     
+                    <h3 style="padding-top: 15px; color: mediumslateblue;" class="years-hyper_paragraph">г.Вятские Поляны</h2>           
+                    <div class="block-winners">
+                    <ul class="buisness_blocks">
+                        <li class="buisness_block">
+                            <div class="photo-place__block">
+                                <img src="person_2.png" alt="">
+                                <div style="background-color: gold;" class="circle"></div>
+                            </div>
+                            <div class="about_member-resulting">
+                                <p class="name_of_members-competition">Коломейко Илларион</p>
+                                <p class="name_of_place-competition">Кировский авиационный техникум</p>
+                            </div>
+                        </li>
+                        <li class="buisness_block">
+                            <div class="photo-place__block">
+                                <img src="person_2.png" alt="">
+                                <div style="background-color: silver;" class="circle"></div>
+                            </div>
+                            <div class="about_member-resulting">
+                                <p class="name_of_members-competition">Романов Виталий</p>
+                                <p class="name_of_place-competition">Вятско-Полянский механический техникум</p>
+                            </div>
+                        </li>
+                        <li class="buisness_block" id="third-block">
+                            <div class="photo-place__block">
+                                <img src="person_2.png" alt="">
+                                <div style="background-color: rgb(153, 104, 40);" class="circle"></div>
+                            </div>
+                            <div class="about_member-resulting">
+                                <p class="name_of_members-competition">Шмыров Егор</p>
+                                <p class="name_of_place-competition">Слободской колледж педагогики и социальных отношений</p>
+                            </div>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div id="third-art" class="years-results">
-            <div>
-
+        </section> 
+        <section id="fourth-year__section" class="nineteen-year__section" style="margin-top: -20px;">
+            <div id="fourth-art" class="years-results">
+                <div class="block-winners__div">
+                    <h2 class="years-hyper_paragraph">«Программные решения для бизнеса»</h2>     
+                    <h3 style="padding-top: 15px; color: mediumslateblue;" class="years-hyper_paragraph">г.Вятские Поляны</h2>           
+                    <div class="block-winners">
+                    <ul class="buisness_blocks">
+                    <!-- ! -->
+                        <li class="buisness_block">
+                            <div class="photo-place__block">
+                                <img src="person_2.png" alt="">
+                                <div style="background-color: gold;" class="circle"></div>
+                            </div>
+                            <div class="about_member-resulting">
+                                <p class="name_of_members-competition">Коротких Наталья</p>
+                                <p class="name_of_place-competition">Слободской колледж педагогики и социальных отношений</p>
+                            </div>
+                        </li>
+                        <li class="buisness_block">
+                            <div class="photo-place__block">
+                                <img src="person_2.png" alt="">
+                                <div style="background-color: silver;" class="circle"></div>
+                            </div>
+                            <div class="about_member-resulting">
+                                <p class="name_of_members-competition">Круглов Владислав</p>
+                                <p class="name_of_place-competition">Вятский автомобильный промышленный коллеж</p>
+                            </div>
+                        </li>
+                        <li class="buisness_block" id="third-block">
+                            <div class="photo-place__block">
+                                <img src="person_2.png" alt="">
+                                <div style="background-color: rgb(153, 104, 40);" class="circle"></div>
+                            </div>
+                            <div class="about_member-resulting">
+                                <p class="name_of_members-competition">Атланов Егор</p>
+                                <p class="name_of_place-competition">Вятско-Полянский механический техникум</p>
+                            </div>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div id="fourth-art" class="years-results">
-            <div>
-
-            </div>
-        </div>
+        </section> 
     </section>
 </main>
-<footer>
+<!-- <footer class="footer"> -->
         
 </footer>
 <script src="script.js" defer></script>

@@ -20,7 +20,7 @@ html {
   cursor: default;
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 99;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -304,7 +304,8 @@ main {
 
 .person_img {
   width: 280px;
-  height: 280px;
+  max-height: 260px;
+  margin-bottom: 40px;
 }
 
 .seperator-wrapper {
@@ -408,6 +409,12 @@ main {
   cursor: pointer;
 }
 
+.footer {
+  height: 100%;
+  padding-bottom: 50px;
+  background-color: #121212;
+}
+
 @media (max-width: 1200px) {
   .member-info_block {
     width: 600px;
@@ -496,9 +503,10 @@ img {
 }
 
 .years-results {
-  margin-top: 15px;
-  display: none;
+  display: block;
+  flex-direction: column;
   justify-content: center;
+  gap: 75px;
 }
 
 .years-hyper_paragraph {
@@ -516,7 +524,7 @@ img {
 
 .block-winners__div {
   box-sizing: border-box;
-  margin-top: 30px;
+  margin-top: 50px;
 }
 
 .block-winners {
@@ -527,8 +535,8 @@ img {
 .buisness_blocks {
   align-items: stretch;
   display: flex;
-  height: 500px;
-  gap: 50px;
+  height: auto;
+  gap: 30px;
   margin: 50px 20px 0px 10px;
   flex-direction: row;
   flex-wrap: wrap;

@@ -17,7 +17,7 @@ members_circle.addEventListener('click', function(){
 });
 
 
-const eighteen_art = document.getElementById('eighteen_art');
+// const eighteen_art = document.getElementById('eighteen_art');
 const nineteen_art = document.getElementById('nineteen-art');
 const twenty_art = document.getElementById('twenty-art');
 const first_art = document.getElementById('first-art');
@@ -27,40 +27,40 @@ const fourth_art = document.getElementById('fourth-art');
 
 
 // 2018 year
-document.getElementById('eighteen-year').addEventListener('click', function() {
-    // document.getElementById('eighteen_art').classList.remove('active');
-    document.getElementById('nineteen-year').classList.remove('active');
-    document.getElementById('twenty-year').classList.remove('active');
-    document.getElementById('first-year').classList.remove('active');
-    document.getElementById('second-year').classList.remove('active');
-    document.getElementById('third-year').classList.remove('active');
-    document.getElementById('fourth-year').classList.remove('active');
+// document.getElementById('eighteen-year').addEventListener('click', function() {
+//     //     // document.getElementById('eighteen_art').classList.remove('active');
+//     document.getElementById('nineteen-year').classList.remove('active');
+//     document.getElementById('twenty-year').classList.remove('active');
+//     document.getElementById('first-year').classList.remove('active');
+//     document.getElementById('second-year').classList.remove('active');
+//     document.getElementById('third-year').classList.remove('active');
+//     document.getElementById('fourth-year').classList.remove('active');
 
-    this.classList.add('active');
+//     this.classList.add('active');
 
-    if (nineteen_art.style.display === 'flex') {
-        nineteen_art.style.display = 'flex';
-    }
-    else {
-        eighteen_art.style.display = 'flex';
-        nineteen_art.style.display = 'none';
-        twenty_art.style.display = 'none';
-        first_art.style.display = 'none';
-        second_art.style.display = 'none';
-        third_art.style.display = 'none';
-        fourth_art.style.display = 'none';
-    }
-    document.getElementById('eighteen_art').style.cursor = 'default';
-    document.getElementById('nineteen-year').style.cursor = 'pointer';
-    document.getElementById('twenty-year').style.cursor = 'pointer';
-    document.getElementById('first-year').style.cursor = 'pointer';
-    document.getElementById('second-year').style.cursor = 'pointer';
-    document.getElementById('third-year').style.cursor = 'pointer';
-    document.getElementById('fourth-year').style.cursor = 'pointer';
-})
+//     if (nineteen_art.style.display === 'flex') {
+//         nineteen_art.style.display = 'flex';
+//     }
+//     else {
+//         eighteen_art.style.display = 'flex';
+//         nineteen_art.style.display = 'none';
+//         twenty_art.style.display = 'none';
+//         first_art.style.display = 'none';
+//         second_art.style.display = 'none';
+//         third_art.style.display = 'none';
+//         fourth_art.style.display = 'none';
+//     }
+//     document.getElementById('eighteen_art').style.cursor = 'default';
+//     document.getElementById('nineteen-year').style.cursor = 'pointer';
+//     document.getElementById('twenty-year').style.cursor = 'pointer';
+//     document.getElementById('first-year').style.cursor = 'pointer';
+//     document.getElementById('second-year').style.cursor = 'pointer';
+//     document.getElementById('third-year').style.cursor = 'pointer';
+//     document.getElementById('fourth-year').style.cursor = 'pointer';
+// })
 // 2019 year
 document.getElementById('nineteen-year').addEventListener('click', function() {
-    // document.getElementById('eighteen_art').classList.remove('active');
+    //     // document.getElementById('eighteen_art').classList.remove('active');
     document.getElementById('nineteen-year').classList.remove('active');
     document.getElementById('twenty-year').classList.remove('active');
     document.getElementById('first-year').classList.remove('active');
@@ -74,7 +74,7 @@ document.getElementById('nineteen-year').addEventListener('click', function() {
         nineteen_art.style.display = 'flex';
     }
     else {
-        eighteen_art.style.display = 'none';
+                // eighteen_art.style.display = 'none';
         nineteen_art.style.display = 'flex';
         twenty_art.style.display = 'none';
         first_art.style.display = 'none';
@@ -107,7 +107,7 @@ document.getElementById('twenty-year').addEventListener('click', function() {
     }
     else {
         twenty_art.style.display = 'flex';
-        eighteen_art.style.display = 'none';
+                // eighteen_art.style.display = 'none';
         nineteen_art.style.display = 'none';
         first_art.style.display = 'none';
         second_art.style.display = 'none';
@@ -115,7 +115,7 @@ document.getElementById('twenty-year').addEventListener('click', function() {
         fourth_art.style.display = 'none';
     }
     document.getElementById('twenty-year').style.cursor = 'default';
-    document.getElementById('eighteen_art').style.cursor = 'pointer';
+        // document.getElementById('eighteen_art').style.cursor = 'pointer';
     document.getElementById('nineteen-year').style.cursor = 'pointer';
     document.getElementById('first-year').style.cursor = 'pointer';
     document.getElementById('second-year').style.cursor = 'pointer';
@@ -124,7 +124,7 @@ document.getElementById('twenty-year').addEventListener('click', function() {
 });
 // 2021 year
 document.getElementById('first-year').addEventListener('click', function() {
-    // document.getElementById('eighteen_art').classList.remove('active');
+    //     // document.getElementById('eighteen_art').classList.remove('active');
     document.getElementById('nineteen-year').classList.remove('active');
     document.getElementById('twenty-year').classList.remove('active');
     document.getElementById('first-year').classList.remove('active');
@@ -139,7 +139,7 @@ document.getElementById('first-year').addEventListener('click', function() {
     }
     else {
         first_art.style.display = 'flex';
-        eighteen_art.style.display = 'none';
+                // eighteen_art.style.display = 'none';
         nineteen_art.style.display = 'none';
         twenty_art.style.display = 'none';
         second_art.style.display = 'none';
@@ -147,7 +147,7 @@ document.getElementById('first-year').addEventListener('click', function() {
         fourth_art.style.display = 'none';
     }
     document.getElementById('first-year').style.cursor = 'default';
-    document.getElementById('eighteen_art').style.cursor = 'pointer';
+        // document.getElementById('eighteen_art').style.cursor = 'pointer';
     document.getElementById('nineteen-year').style.cursor = 'pointer';
     document.getElementById('twenty-year').style.cursor = 'pointer';
     document.getElementById('second-year').style.cursor = 'pointer';
@@ -156,7 +156,7 @@ document.getElementById('first-year').addEventListener('click', function() {
 });
 // 2022 year
 document.getElementById('second-year').addEventListener('click', function() {
-    // document.getElementById('eighteen_art').classList.remove('active');
+    //     // document.getElementById('eighteen_art').classList.remove('active');
     document.getElementById('nineteen-year').classList.remove('active');
     document.getElementById('twenty-year').classList.remove('active');
     document.getElementById('first-year').classList.remove('active');
@@ -171,7 +171,7 @@ document.getElementById('second-year').addEventListener('click', function() {
     }
     else {
         second_art.style.display = 'flex';
-        eighteen_art.style.display = 'none';
+                // eighteen_art.style.display = 'none';
         nineteen_art.style.display = 'none';
         twenty_art.style.display = 'none';
         first_art.style.display = 'none';
@@ -179,7 +179,7 @@ document.getElementById('second-year').addEventListener('click', function() {
         fourth_art.style.display = 'none';
     }
     document.getElementById('second-year').style.cursor = 'default';
-    document.getElementById('eighteen_art').style.cursor = 'pointer';
+        // document.getElementById('eighteen_art').style.cursor = 'pointer';
     document.getElementById('nineteen-year').style.cursor = 'pointer';
     document.getElementById('twenty-year').style.cursor = 'pointer';
     document.getElementById('first-year').style.cursor = 'pointer';
@@ -203,7 +203,7 @@ document.getElementById('third-year').addEventListener('click', function() {
     }
     else {
         third_art.style.display = 'flex';
-        eighteen_art.style.display = 'none';
+                // eighteen_art.style.display = 'none';
         nineteen_art.style.display = 'none';
         twenty_art.style.display = 'none';
         first_art.style.display = 'none';
@@ -211,7 +211,7 @@ document.getElementById('third-year').addEventListener('click', function() {
         fourth_art.style.display = 'none';
     }
     document.getElementById('third-year').style.cursor = 'default';
-    document.getElementById('eighteen_art').style.cursor = 'pointer';
+        // document.getElementById('eighteen_art').style.cursor = 'pointer';
     document.getElementById('nineteen-year').style.cursor = 'pointer';
     document.getElementById('twenty-year').style.cursor = 'pointer';
     document.getElementById('first-year').style.cursor = 'pointer';
@@ -235,7 +235,7 @@ document.getElementById('fourth-year').addEventListener('click', function() {
     }
     else {
         fourth_art.style.display = 'flex';
-        eighteen_art.style.display = 'none';
+        // eighteen_art.style.display = 'none';
         nineteen_art.style.display = 'none';
         twenty_art.style.display = 'none';
         first_art.style.display = 'none';
@@ -243,7 +243,7 @@ document.getElementById('fourth-year').addEventListener('click', function() {
         third_art.style.display = 'none';
     }
     document.getElementById('fourth-year').style.cursor = 'default';
-    document.getElementById('eighteen_art').style.cursor = 'pointer';
+    // document.getElementById('eighteen_art').style.cursor = 'pointer';
     document.getElementById('nineteen-year').style.cursor = 'pointer';
     document.getElementById('twenty-year').style.cursor = 'pointer';
     document.getElementById('first-year').style.cursor = 'pointer';
@@ -317,7 +317,7 @@ plus_teacher_button.addEventListener('click', function() {
     document.getElementById('winners-years2').style.display = 'none';
     document.getElementById('results').appendChild(nav_winner_plus_teacher_years);
 
-    eighteen_art.style.display = 'none';
+    // eighteen_art.style.display = 'none';
     nineteen_art.style.display = 'none';
     twenty_art.style.display = 'none';
     first_art.style.display = 'none';

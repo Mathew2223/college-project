@@ -24,11 +24,13 @@ img{
 }
 .nineteen-year__section{
     margin: 0 auto;
+    // display: none;
 }
 .years-results{
-    margin-top: 15px;
-    display: none;
+    display: block;
+    flex-direction: column;
     justify-content: center;
+    gap: 75px;
 }
 .years-hyper_paragraph{
     font-family: $font-Montserrat;
@@ -43,18 +45,17 @@ img{
 }
 .block-winners__div{
     box-sizing: border-box;
-    margin-top: 30px;
+    margin-top: 50px;
 }
 .block-winners{
     display: $flexbox__display-flex;
     justify-content: center;
-
 }
 .buisness_blocks{
     align-items: stretch;
     display: $flexbox__display-flex;
-    height: 500px;
-    gap: 50px;
+    height: auto;
+    gap: 30px;
     margin: 50px 20px 0px 10px;
     flex-direction: row;
     @include wrap();
