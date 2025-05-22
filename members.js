@@ -31,7 +31,8 @@ let members = [
             <span class="text-members_hex_purple__color">Результат: </span><span style="color: #1B263B;" class="twenty-19-competition">Медальон «За профессионализм» </span>
         `],
         student_results_year: ['<p class="special_student-p_year">2019 год</p>'],       
-        profile_img: 'person.png'
+        profile_img: 'person.png',
+        styles: 'height: 250px;'
     },
     {
         element: document.createElement('div'),
@@ -46,7 +47,8 @@ let members = [
             <span class="text-members_hex_purple__color">Результат: </span><span class="twenty-19-competition"><span class="brown_color">3 место </span></span>
         `],
         student_results_year: ['<p class="special_student-p_year">2020 год</p>'],       
-        profile_img: 'person.png'
+        profile_img: 'person.png',
+        styles: 'height: 250px;'
     },
     {
         element: document.createElement('div'),
@@ -109,7 +111,8 @@ let members = [
             <span class="text-members_hex_purple__color">Результат: </span><span class="twenty-19-competition"><span class="gold_color">1 место </span></span>
         `],
         student_results_year: ['<p class="special_student-p_year">2022 год</p>'],       
-        profile_img: 'person.png'
+        profile_img: 'person.png',
+        styles: 'height: 250px;'
     },
     {
         element: document.createElement('div'),
@@ -127,7 +130,8 @@ let members = [
             <span class="text-members_hex_purple__color">Результат: </span><span class="silver_color">2 место </span></span> 
         `],
         student_results_year: ['<p class="special_student-p_year">2022 год</p>'],       
-        profile_img: 'person.png'
+        profile_img: 'person.png',
+        styles: 'height: 250px;'
     },
     {
         element: document.createElement('div'),
@@ -142,7 +146,8 @@ let members = [
         `],
         student_results_year: ['<p class="special_student-p_year">2022 год</p>'],
         profile_img: 'person.png',
-        experting: ''
+        experting: '',
+        styles: 'height: 250px;'
     },
     {
         element: document.createElement('div'),
@@ -157,7 +162,8 @@ let members = [
             <span class="text-members_hex_purple__color">Результат: </span><span class="twenty-19-competition"><span class="gold_color">1 место </span></span>
         `],
         student_results_year: ['<p class="special_student-p_year">2023 год</p>'],       
-        profile_img: 'person.png'
+        profile_img: 'person.png',
+        styles: 'height: 250px;'
     },
     {
         element: document.createElement('div'),
@@ -175,7 +181,8 @@ let members = [
             <span class="text-members_hex_purple__color">Результат: </span><span style="color: #1B263B;" class="twenty-19-competition">Участие</span>
         `],
         student_results_year: ['<p class="special_student-p_year">2023 год</p>'],
-        profile_img: 'person.png'
+        profile_img: 'person.png',
+        styles: 'height: 250px;'
     },
     {
         element: document.createElement('div'),
@@ -190,7 +197,8 @@ let members = [
             <span class="text-members_hex_purple__color">Результат: </span><span class="twenty-19-competition"><span class="gold_color">1 место </span></span>
         `],
         student_results_year: ['<p class="special_student-p_year">2024 год</p>'],
-        profile_img: 'person.png'
+        profile_img: 'person.png',
+        styles: 'height: 250px;'
     },
     {
         element: document.createElement('div'),
@@ -205,7 +213,8 @@ let members = [
             <span class="text-members_hex_purple__color">Результат: </span><span class="twenty-19-competition"><span class="gold_color">1 место </span></span>
         `],
         student_results_year: ['<p class="special_student-p_year">2025 год</p>'],
-        profile_img: 'person.png'
+        profile_img: 'person.png',
+        styles: 'height: 250px;'
     },
 ];
 document.addEventListener('DOMContentLoaded', function() {
